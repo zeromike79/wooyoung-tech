@@ -165,6 +165,10 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  /* Constrain spread at very wide screens */
+  max-width: 1100px;
+  margin-inline: auto;
+  padding: 0 clamp(0px, 2vw, 32px);
 }
 
 /* Logo */
@@ -725,12 +729,24 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 /* Nav active link */
 #main-nav a.active {
   color: var(--clr-primary) !important;
-  background: rgba(46,125,50,0.08) !important;
+  background: rgba(46,125,50,0.1) !important;
   border-radius: var(--radius-sm);
+  position: relative;
+}
+#main-nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 2px; left: 16px; right: 16px;
+  height: 2px;
+  background: var(--clr-primary);
+  border-radius: 2px;
 }
 #main-header:not(.scrolled) #main-nav a.active {
   color: var(--clr-white) !important;
-  background: rgba(255,255,255,0.15) !important;
+  background: rgba(255,255,255,0.18) !important;
+}
+#main-header:not(.scrolled) #main-nav a.active::after {
+  background: var(--clr-white);
 }
 
 /* ============================================================
@@ -823,7 +839,10 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
 @media (max-width: 1024px) { .hp-cat-grid { grid-template-columns: repeat(4, 1fr); } }
 @media (max-width: 768px)  { .hp-cat-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 480px)  { .hp-cat-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
+@media (max-width: 480px)  {
+  .hp-cat-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .hp-cat-body h3 { font-size: 0.78rem; }
+}
 
 /* ── Cool-Fog text column (explicit) ────────────────────── */
 .cf-text {
@@ -1763,6 +1782,9 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
     color: var(--clr-primary) !important;
     background: rgba(46,125,50,0.08) !important;
   }
+  /* Mobile: active link shows color, no underline */
+  #main-nav a.active { color: var(--clr-primary) !important; }
+  #main-nav a.active::after { display: none; }
   #menu-toggle { display: flex; }
 
   /* Hero */
@@ -1771,7 +1793,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   .hero-actions .btn { width: 100%; justify-content: center; }
 
   /* Products */
-  .products-grid { grid-template-columns: 1fr; }
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
 
   /* Why */
   .why-block { grid-template-columns: 1fr; }
