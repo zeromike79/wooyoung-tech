@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" class="font-en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wooyoung Tech — Precision Irrigation Solutions for maximum yield and water efficiency." />
+  <title>Wooyoung Tech | Precision Irrigation Solutions</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════════════════ -->
+  <header id="main-header" role="banner">
+    <div class="container header-inner">
+
+      <!-- Logo -->
+      <a href="#" class="logo" aria-label="Wooyoung Tech Home">
+        <img src="images/woo_transparent.png" alt="Wooyoung Tech" class="logo-img" width="44" height="44" />
+        <div class="logo-text">
+          <span class="logo-main">WOOYOUNG TECH</span>
+          <span class="logo-sub">Precision Irrigation</span>
+        </div>
+      </a>
+
+      <!-- Navigation -->
+      <nav id="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="#products" data-i18n="nav_products">Products</a>
+        <a href="#solutions" data-i18n="nav_solutions">Solutions</a>
+        <a href="#about" data-i18n="nav_about">About Us</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+
+        <!-- Admin-only language switcher -->
+        <div id="admin-lang-bar" role="group" aria-label="Language selector">
+          <label for="lang-selector" style="color:#666;font-size:.8rem;font-weight:600;" data-i18n="lang_label">Language</label>
+          <select id="lang-selector" aria-label="Select language">
+            <option value="en">English</option>
+            <option value="ko">한국어</option>
+            <option value="ja">日本語</option>
+            <option value="zh">中文</option>
+          </select>
+        </div>
+      </nav>
+
+      <!-- Hamburger -->
+      <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <div id="nav-overlay" aria-hidden="true"></div>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════════════ -->
+  <section id="hero" aria-label="Hero">
+    <video class="hero-video" autoplay muted loop playsinline preload="none"
+           data-i18n-alt="alt_hero_video">
+      <source src="videos/hero.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <!-- Fallback bg image via picsum when video not available -->
+    <style>
+      .hero-video:not([src*=".mp4"]),
+      .hero-video[src=""] {
+        display: none;
+      }
+      #hero {
+        background-image: url('https://picsum.photos/seed/irrigation/1600/900');
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <i class="fa-solid fa-leaf"></i>
+          <span>Agricultural Irrigation Technology</span>
+        </div>
+        <h1 data-i18n="hero_title">Precision Irrigation<br /><em>Solutions</em></h1>
+        <p data-i18n="hero_subtitle">Advanced drip and sprinkler systems engineered for maximum yield and water efficiency — trusted by farmers across the globe.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-accent" data-i18n="hero_cta_learn">Learn More</a>
+          <a href="#contact" class="btn btn-outline" data-i18n="hero_cta_contact">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       COOL-FOG FEATURED PRODUCT
+  ═══════════════════════════════════════════════════════ -->
+  <section id="coolfog" class="section cf-section" aria-labelledby="cf-heading">
+    <div class="container">
+      <div class="cf-inner animate-on-scroll">
+
+        <!-- Left: text -->
+        <div class="cf-text">
+          <span class="cf-badge" data-i18n="cf_section_badge">Signature Product</span>
+          <h2 id="cf-heading" data-i18n="cf_section_title">COOL-FOG</h2>
+          <p class="cf-desc" id="cf-desc"><!-- filled by JS from coolFogFeature.desc --></p>
+
+          <!-- Stats row -->
+          <div class="cf-stats" id="cf-stats"><!-- filled by JS --></div>
+
+          <!-- Patent + Research badges -->
+          <div class="cf-badges">
+            <span class="cf-meta-badge"><i class="fa-solid fa-shield-halved"></i> Patent No. 10-20240153539</span>
+            <span class="cf-meta-badge"><i class="fa-solid fa-flask"></i><span id="cf-research"><!-- filled by JS --></span></span>
+          </div>
+
+          <!-- Application pills -->
+          <div class="cf-apps" id="cf-apps"><!-- filled by JS --></div>
+
+          <!-- CTAs -->
+          <div class="cf-actions">
+            <a href="downloads/coolfog_en.pdf" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="cf_cta_catalog">View Full Catalog</a>
+            <a href="#contact" class="btn btn-outline-dark" data-i18n="cf_cta_inquiry">Request Quotation</a>
+          </div>
+        </div>
+
+        <!-- Right: visual key-stat card -->
+        <div class="cf-visual">
+          <div class="cf-hero-card">
+            <img src="https://picsum.photos/seed/coolfog-hero/700/800"
+                 alt="Cool-Fog misting system in greenhouse"
+                 loading="lazy" width="700" height="800" />
+            <div class="cf-card-overlay">
+              <div class="cf-card-kpi">
+                <span class="cf-kpi-value">15.8 µm</span>
+                <span class="cf-kpi-label">Avg. Droplet Size</span>
+              </div>
+              <div class="cf-card-kpi">
+                <span class="cf-kpi-value">4–12 °C</span>
+                <span class="cf-kpi-label">Cooling Effect</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       PRODUCTS
+  ═══════════════════════════════════════════════════════ -->
+  <section id="products" class="section" aria-labelledby="products-heading">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 id="products-heading" data-i18n="products_section_title">Our Products</h2>
+        <p data-i18n="products_section_subtitle">Comprehensive irrigation components designed for every agricultural need.</p>
+      </div>
+
+      <!-- Category selector — rendered by JS -->
+      <div class="product-category-selector animate-on-scroll"
+           id="product-filter-tabs" role="tablist" aria-label="Product categories">
+        <!-- Rendered by JS from productCategories -->
+      </div>
+
+      <!-- Dynamic grid — filled by JS -->
+      <div class="products-grid" id="products-grid" aria-live="polite" aria-atomic="true">
+        <!-- Cards injected by products.js + main.js -->
+      </div>
+
+      <!-- Pagination -->
+      <div class="product-pagination" id="product-pagination" aria-label="Product pagination">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       WHY WOOYOUNG TECH
+  ═══════════════════════════════════════════════════════ -->
+  <section id="why" class="section section--alt" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 id="why-heading" data-i18n="why_section_title">Why Wooyoung Tech</h2>
+        <p data-i18n="why_section_subtitle">Decades of manufacturing excellence combined with field-proven innovation.</p>
+      </div>
+
+      <!-- Block 1: left image / right text -->
+      <div class="why-block animate-on-scroll">
+        <div class="why-img-wrap">
+          <img src="https://picsum.photos/seed/manufacturing/800/600"
+               data-i18n-alt="alt_why_manufacturing"
+               alt="Precision manufacturing facility"
+               loading="lazy" width="800" height="600" />
+          <div class="why-img-badge">
+            <i class="fa-solid fa-award"></i>
+            <span data-i18n="why_block1_stat">±0.05 mm tolerance</span>
+          </div>
+        </div>
+        <div class="why-text">
+          <div class="why-icon" aria-hidden="true">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3 data-i18n="why_block1_title">Precision Manufacturing</h3>
+          <p data-i18n="why_block1_desc">Our ISO-certified facilities produce components to tolerances of ±0.05 mm, ensuring every dripper delivers exactly the right flow rate season after season.</p>
+          <span class="why-stat">
+            <i class="fa-solid fa-circle-check"></i>
+            <span data-i18n="why_block1_stat">±0.05 mm tolerance</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Block 2: right image / left text (reverse) -->
+      <div class="why-block why-block--reverse animate-on-scroll">
+        <div class="why-img-wrap">
+          <img src="https://picsum.photos/seed/water-saving/800/600"
+               data-i18n-alt="alt_why_water"
+               alt="Water saving irrigation technology"
+               loading="lazy" width="800" height="600" />
+          <div class="why-img-badge">
+            <i class="fa-solid fa-droplet-slash"></i>
+            <span data-i18n="why_block2_stat">Up to 50% water savings</span>
+          </div>
+        </div>
+        <div class="why-text">
+          <div class="why-icon" aria-hidden="true">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+          <h3 data-i18n="why_block2_title">Water-Saving Technology</h3>
+          <p data-i18n="why_block2_desc">Wooyoung Tech systems reduce water consumption by up to 50% compared to conventional surface irrigation while improving crop yields.</p>
+          <span class="why-stat">
+            <i class="fa-solid fa-circle-check"></i>
+            <span data-i18n="why_block2_stat">Up to 50% water savings</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Block 3: left image / right text -->
+      <div class="why-block animate-on-scroll">
+        <div class="why-img-wrap">
+          <img src="https://picsum.photos/seed/global-field/800/600"
+               data-i18n-alt="alt_why_global"
+               alt="Global irrigation deployment"
+               loading="lazy" width="800" height="600" />
+          <div class="why-img-badge">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span data-i18n="why_block3_stat">40+ countries deployed</span>
+          </div>
+        </div>
+        <div class="why-text">
+          <div class="why-icon" aria-hidden="true">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <h3 data-i18n="why_block3_title">Global Field Expertise</h3>
+          <p data-i18n="why_block3_desc">From arid deserts to tropical greenhouses, our products are deployed across 40+ countries, validated in the world's most demanding growing conditions.</p>
+          <span class="why-stat">
+            <i class="fa-solid fa-circle-check"></i>
+            <span data-i18n="why_block3_stat">40+ countries deployed</span>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SOLUTIONS
+  ═══════════════════════════════════════════════════════ -->
+  <section id="solutions" class="section" aria-labelledby="solutions-heading">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 id="solutions-heading" data-i18n="solutions_section_title">Irrigation Solutions</h2>
+        <p data-i18n="solutions_section_subtitle">Purpose-built systems tailored to every growing environment.</p>
+      </div>
+
+      <div class="solutions-grid">
+
+        <!-- Open Field -->
+        <div class="solution-card animate-on-scroll" role="article">
+          <img src="https://picsum.photos/seed/open-field/900/700"
+               data-i18n-alt="alt_solution_openfield"
+               alt="Open field irrigation"
+               loading="lazy" width="900" height="700" />
+          <div class="solution-base-overlay" aria-hidden="true"></div>
+          <span class="solution-tag">Open Field</span>
+          <div class="solution-content">
+            <h3 data-i18n="solution_openfield_name">Open Field</h3>
+            <p class="solution-desc" data-i18n="solution_openfield_desc">High-efficiency drip and sprinkler systems for large-scale row crops, grains, and vegetables in open agricultural land.</p>
+          </div>
+        </div>
+
+        <!-- Greenhouse -->
+        <div class="solution-card animate-on-scroll" role="article">
+          <img src="https://picsum.photos/seed/greenhouse/900/700"
+               data-i18n-alt="alt_solution_greenhouse"
+               alt="Greenhouse irrigation"
+               loading="lazy" width="900" height="700" />
+          <div class="solution-base-overlay" aria-hidden="true"></div>
+          <span class="solution-tag">Greenhouse</span>
+          <div class="solution-content">
+            <h3 data-i18n="solution_greenhouse_name">Greenhouse</h3>
+            <p class="solution-desc" data-i18n="solution_greenhouse_desc">Precision micro-irrigation for protected cultivation, delivering water and nutrients directly to the root zone with minimal waste.</p>
+          </div>
+        </div>
+
+        <!-- Orchard -->
+        <div class="solution-card animate-on-scroll" role="article">
+          <img src="https://picsum.photos/seed/orchard/900/700"
+               data-i18n-alt="alt_solution_orchard"
+               alt="Orchard irrigation"
+               loading="lazy" width="900" height="700" />
+          <div class="solution-base-overlay" aria-hidden="true"></div>
+          <span class="solution-tag">Orchard</span>
+          <div class="solution-content">
+            <h3 data-i18n="solution_orchard_name">Orchard</h3>
+            <p class="solution-desc" data-i18n="solution_orchard_desc">Robust drip and under-tree sprinkler networks designed for fruit trees, vineyards, and perennial crops on uneven terrain.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════════════════ -->
+  <section id="about" class="section" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-inner">
+
+        <!-- Text side -->
+        <div class="about-text animate-on-scroll">
+          <p class="about-sub" data-i18n="about_section_subtitle">A trusted partner in agricultural irrigation since 1998.</p>
+          <h2 id="about-heading" data-i18n="about_section_title">About Wooyoung Tech</h2>
+          <p data-i18n="about_desc1">Wooyoung Tech Co., Ltd. was established with a single mission: to help farmers grow more with less. We design and manufacture a complete range of irrigation products — from individual drip emitters to full turnkey systems — that increase crop yields, conserve precious water resources, and reduce operational costs.</p>
+          <p data-i18n="about_desc2">Our R&amp;D team continuously develops next-generation solutions integrating sensor technology, AI-driven scheduling, and sustainable materials, ensuring our customers stay ahead in an era of climate uncertainty.</p>
+          <a href="#" class="btn btn-primary" data-i18n="about_cta">Learn More About Us</a>
+        </div>
+
+        <!-- Stats side -->
+        <div class="stats-grid animate-on-scroll">
+
+          <div class="stat-card">
+            <div class="stat-number">
+              <span data-count="1998" data-i18n="stat_founded_value">1998</span><span class="stat-suffix" data-i18n="stat_founded_suffix"></span>
+            </div>
+            <div class="stat-label" data-i18n="stat_founded">Founded</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number">
+              <span data-count="300" data-i18n="stat_products_value">300</span><span class="stat-suffix" data-i18n="stat_products_suffix">+</span>
+            </div>
+            <div class="stat-label" data-i18n="stat_products">Products</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number">
+              <span data-count="40" data-i18n="stat_countries_value">40</span><span class="stat-suffix" data-i18n="stat_countries_suffix">+</span>
+            </div>
+            <div class="stat-label" data-i18n="stat_countries">Export Countries</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number">
+              <span data-count="5000" data-i18n="stat_clients_value">5,000</span><span class="stat-suffix" data-i18n="stat_clients_suffix">+</span>
+            </div>
+            <div class="stat-label" data-i18n="stat_clients">Global Clients</div>
+          </div>
+
+        </div><!-- /.stats-grid -->
+      </div><!-- /.about-inner -->
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       NEWS
+  ═══════════════════════════════════════════════════════ -->
+  <section id="news" class="section section--alt" aria-labelledby="news-heading">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 id="news-heading" data-i18n="news_section_title">Latest News</h2>
+        <p data-i18n="news_section_subtitle">Stay updated with the latest from Wooyoung Tech.</p>
+      </div>
+
+      <div class="news-grid">
+
+        <!-- News 1 -->
+        <article class="news-card animate-on-scroll">
+          <div class="news-card-img">
+            <img src="https://picsum.photos/seed/news1/800/450"
+                 data-i18n-alt="alt_news1"
+                 alt="Smart dripper series news"
+                 loading="lazy" width="800" height="450" />
+          </div>
+          <div class="news-card-body">
+            <div class="news-meta">
+              <span class="news-cat" data-i18n="news1_cat">Product Launch</span>
+              <time class="news-date" data-i18n="news1_date">May 15, 2026</time>
+            </div>
+            <h3 data-i18n="news1_title">Wooyoung Tech Unveils Next-Gen Smart Dripper Series</h3>
+            <p data-i18n="news1_excerpt">The new WD-700 series features built-in pressure compensation and self-flushing mechanisms for clog-free performance.</p>
+          </div>
+        </article>
+
+        <!-- News 2 -->
+        <article class="news-card animate-on-scroll">
+          <div class="news-card-img">
+            <img src="https://picsum.photos/seed/news2/800/450"
+                 data-i18n-alt="alt_news2"
+                 alt="Agri-Tech exhibition news"
+                 loading="lazy" width="800" height="450" />
+          </div>
+          <div class="news-card-body">
+            <div class="news-meta">
+              <span class="news-cat" data-i18n="news2_cat">Exhibition</span>
+              <time class="news-date" data-i18n="news2_date">April 28, 2026</time>
+            </div>
+            <h3 data-i18n="news2_title">Meet Us at Agri-Tech Middle East 2026</h3>
+            <p data-i18n="news2_excerpt">Wooyoung Tech will showcase its full irrigation product line at the Dubai World Trade Centre, Hall 3, Booth B14.</p>
+          </div>
+        </article>
+
+        <!-- News 3 -->
+        <article class="news-card animate-on-scroll">
+          <div class="news-card-img">
+            <img src="https://picsum.photos/seed/news3/800/450"
+                 data-i18n-alt="alt_news3"
+                 alt="ISO certification news"
+                 loading="lazy" width="800" height="450" />
+          </div>
+          <div class="news-card-body">
+            <div class="news-meta">
+              <span class="news-cat" data-i18n="news3_cat">Company News</span>
+              <time class="news-date" data-i18n="news3_date">March 10, 2026</time>
+            </div>
+            <h3 data-i18n="news3_title">Wooyoung Tech Achieves ISO 9001:2015 Recertification</h3>
+            <p data-i18n="news3_excerpt">Our manufacturing facilities have successfully passed the annual ISO 9001:2015 quality management audit for the fifth consecutive year.</p>
+          </div>
+        </article>
+
+      </div><!-- /.news-grid -->
+
+      <div class="news-footer animate-on-scroll">
+        <a href="#" class="news-all-link" data-i18n="news_view_all">View All News →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════ -->
+  <footer id="footer" id="contact" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="images/woo_transparent.png" alt="Wooyoung Tech" class="logo-img logo-img--footer" width="40" height="40" />
+            <div class="logo-text">
+              <span class="logo-main">WOOYOUNG TECH</span>
+              <span class="logo-sub">Precision Irrigation</span>
+            </div>
+          </a>
+          <p class="footer-tagline" data-i18n="footer_tagline">Precision irrigation solutions for a water-efficient world.</p>
+          <nav class="footer-social" aria-label="Social media links">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </nav>
+        </div>
+
+        <!-- Company links -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_col_company">Company</h4>
+          <ul>
+            <li><a href="#about" data-i18n="footer_link_about">About Us</a></li>
+            <li><a href="#solutions" data-i18n="footer_link_solutions">Solutions</a></li>
+            <li><a href="#news" data-i18n="footer_link_news">News</a></li>
+            <li><a href="#" data-i18n="footer_link_careers">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Product links -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_col_products">Products</h4>
+          <ul>
+            <li><a href="#products" data-i18n="footer_link_drip">Drip Tape</a></li>
+            <li><a href="#products" data-i18n="footer_link_drippers">Drippers</a></li>
+            <li><a href="#products" data-i18n="footer_link_sprinklers">Mini Sprinklers</a></li>
+            <li><a href="#products" data-i18n="footer_link_smart">Smart Systems</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact info -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_col_contact">Contact Us</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span data-i18n="footer_address">123 Industrial Complex, Ansan-si, Gyeonggi-do, South Korea</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+82310000000" data-i18n="footer_phone">+82-31-000-0000</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:info@wooyoungtech.com" data-i18n="footer_email">info@wooyoungtech.com</a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!-- /.footer-top -->
+
+      <div class="footer-bottom">
+        <p data-i18n="footer_copyright">© 2026 Wooyoung Tech Co., Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       PRODUCT MODAL
+  ═══════════════════════════════════════════════════════ -->
+  <div id="product-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-product-name" hidden>
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-inner">
+        <div class="modal-img-wrap">
+          <img id="modal-img" src="" alt="" />
+        </div>
+        <div class="modal-content">
+          <span class="modal-part-no" id="modal-part-no"></span>
+          <h2 class="modal-product-name" id="modal-product-name"></h2>
+          <p class="modal-desc" id="modal-desc"></p>
+          <div class="modal-actions">
+            <a id="modal-catalog-btn" href="#" class="btn btn-primary" target="_blank" rel="noopener">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span data-i18n="modal_download_catalog">Download Catalog</span>
+            </a>
+            <a href="#contact" class="btn btn-outline-green modal-contact-btn">
+              <i class="fa-solid fa-envelope"></i>
+              <span data-i18n="modal_contact">Contact Us</span>
+            </a>
+          </div>
+          <p class="modal-catalog-note" data-i18n="modal_catalog_note">
+            Full product specifications are available in the catalog PDF.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Scripts ──────────────────────────────────────── -->
+  <script src="js/i18n.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
