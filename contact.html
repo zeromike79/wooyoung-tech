@@ -56,9 +56,6 @@
   </section>
 
 <!-- ══════════════════════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════════════════════ -->
-  <!-- ══════════════════════════════════════════════════════
        CONTACT SECTION
   ═══════════════════════════════════════════════════════ -->
   <div id="contact"></div>
@@ -69,51 +66,119 @@
         <p data-i18n="contact_section_subtitle">Get in touch with our team for product inquiries and support.</p>
       </div>
 
-      <div class="contact-grid">
+      <div class="contact-main">
 
-        <!-- Address card -->
-        <div class="contact-card animate-on-scroll">
-          <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
-          <h3 class="contact-card-label" data-i18n="contact_address_label">Address</h3>
-          <p data-i18n="footer_address">365-27, Naseon-ro, Dasan-myeon, Goryeong-gun, Gyeongsangbuk-do, Korea</p>
-          <a href="https://maps.google.com/?q=365-27+Naseon-ro+Dasan-myeon+Goryeong-gun+Gyeongsangbuk-do+Korea"
-             target="_blank" rel="noopener" class="contact-card-link" data-i18n="contact_map_btn">
-            <i class="fa-solid fa-map-location-dot"></i> View on Map
-          </a>
+        <!-- Left: Form -->
+        <div class="contact-form-wrap animate-on-scroll">
+          <h3 data-i18n="contact_form_title">Send Us a Message</h3>
+          <p data-i18n="contact_form_subtitle">Fill in the form and we'll get back to you within 1–2 business days.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cf-name" data-i18n="contact_form_name">Your Name</label>
+                <input type="text" id="cf-name" name="name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="cf-email" data-i18n="contact_form_email">Email Address</label>
+                <input type="email" id="cf-email" name="email" required autocomplete="email" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="cf-company" data-i18n="contact_form_company">Company / Farm (optional)</label>
+              <input type="text" id="cf-company" name="company" autocomplete="organization" />
+            </div>
+
+            <div class="form-group">
+              <label for="cf-type" data-i18n="contact_form_type">Inquiry Type</label>
+              <select id="cf-type" name="type">
+                <option value="product" data-i18n="contact_form_type_product">Product Inquiry</option>
+                <option value="export" data-i18n="contact_form_type_export">Export / Distribution</option>
+                <option value="tech" data-i18n="contact_form_type_tech">Technical Support</option>
+                <option value="other" data-i18n="contact_form_type_other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="cf-message" data-i18n="contact_form_message">Message</label>
+              <textarea id="cf-message" name="message" required
+                        data-i18n-placeholder="contact_form_msg_placeholder"
+                        placeholder="Please describe your inquiry in detail..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              <i class="fa-solid fa-paper-plane" style="margin-right:8px;"></i>
+              <span data-i18n="contact_form_submit">Send Message</span>
+            </button>
+            <p class="form-note">
+              <i class="fa-solid fa-circle-info"></i>
+              <span data-i18n="contact_form_note">We typically respond within 1–2 business days.</span>
+            </p>
+          </form>
         </div>
 
-        <!-- Phone / Fax card -->
-        <div class="contact-card animate-on-scroll">
-          <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
-          <h3 class="contact-card-label" data-i18n="contact_phone_label">Phone</h3>
-          <p><a href="tel:+82549540885" data-i18n="footer_phone">+82-54-954-0885</a></p>
-          <p class="contact-fax">
-            <span class="contact-fax-label" data-i18n="contact_fax_label">Fax</span>
-            054-954-0883
-          </p>
-        </div>
+        <!-- Right: Info cards -->
+        <div class="contact-info-stack">
 
-        <!-- Email card -->
-        <div class="contact-card animate-on-scroll">
-          <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
-          <h3 class="contact-card-label" data-i18n="contact_email_label">Email</h3>
-          <p><a href="mailto:wy21424@naver.com" data-i18n="footer_email">wy21424@naver.com</a></p>
-          <a href="mailto:wy21424@naver.com?subject=Product Inquiry — WOOYEONG"
-             class="contact-card-link" data-i18n="contact_inquiry_btn">
-            <i class="fa-solid fa-paper-plane"></i> Send Inquiry
-          </a>
-        </div>
+          <div class="contact-card animate-on-scroll">
+            <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <h3 class="contact-card-label" data-i18n="contact_address_label">Address</h3>
+            <p data-i18n="footer_address">365-27, Naseon-ro, Dasan-myeon, Goryeong-gun, Gyeongsangbuk-do, Korea</p>
+            <a href="https://maps.google.com/?q=365-27+Naseon-ro+Dasan-myeon+Goryeong-gun+Gyeongsangbuk-do+Korea"
+               target="_blank" rel="noopener" class="contact-card-link" data-i18n="contact_map_btn">
+              <i class="fa-solid fa-map-location-dot"></i> View on Map
+            </a>
+          </div>
 
-        <!-- Hours card -->
-        <div class="contact-card animate-on-scroll">
-          <div class="contact-card-icon"><i class="fa-solid fa-clock"></i></div>
-          <h3 class="contact-card-label" data-i18n="contact_hours_label">Business Hours</h3>
-          <p data-i18n="contact_hours_value">Mon – Fri  09:00 – 18:00 (KST)</p>
-          <p class="contact-holiday">※ Closed on Korean public holidays</p>
-        </div>
+          <div class="contact-card animate-on-scroll">
+            <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+            <h3 class="contact-card-label" data-i18n="contact_phone_label">Phone</h3>
+            <p><a href="tel:+82549540885" data-i18n="footer_phone">+82-54-954-0885</a></p>
+            <p class="contact-fax">
+              <span class="contact-fax-label" data-i18n="contact_fax_label">Fax</span>
+              054-954-0883
+            </p>
+          </div>
 
-      </div><!-- /.contact-grid -->
+          <div class="contact-card animate-on-scroll">
+            <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+            <h3 class="contact-card-label" data-i18n="contact_email_label">Email</h3>
+            <p><a href="mailto:wy21424@naver.com" data-i18n="footer_email">wy21424@naver.com</a></p>
+            <a href="mailto:wy21424@naver.com?subject=Product Inquiry — WOOYEONG"
+               class="contact-card-link" data-i18n="contact_inquiry_btn">
+              <i class="fa-solid fa-paper-plane"></i> Send Inquiry
+            </a>
+          </div>
+
+          <div class="contact-card animate-on-scroll">
+            <div class="contact-card-icon"><i class="fa-solid fa-clock"></i></div>
+            <h3 class="contact-card-label" data-i18n="contact_hours_label">Business Hours</h3>
+            <p data-i18n="contact_hours_value">Mon – Fri  09:00 – 18:00 (KST)</p>
+            <p class="contact-holiday">※ Closed on Korean public holidays</p>
+          </div>
+
+        </div><!-- /.contact-info-stack -->
+      </div><!-- /.contact-main -->
     </div>
+  </section>
+
+<!-- ══════════════════════════════════════════════════════
+       MAP
+  ═══════════════════════════════════════════════════════ -->
+  <section class="map-section" aria-label="Location map">
+    <div class="map-header">
+      <h2 data-i18n="contact_map_title">Find Us</h2>
+      <p data-i18n="contact_map_subtitle">365-27, Naseon-ro, Dasan-myeon, Goryeong-gun, Gyeongsangbuk-do, Korea</p>
+    </div>
+    <iframe
+      class="map-embed"
+      src="https://maps.google.com/maps?q=경상북도+고령군+다산면+나선로+365-27&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      title="Wooyoung Tech Location"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </section>
 
 <footer id="footer" role="contentinfo">
@@ -194,5 +259,25 @@
   <script src="js/i18n.js"></script>
   <script src="js/lang.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name    = document.getElementById('cf-name').value.trim();
+      const email   = document.getElementById('cf-email').value.trim();
+      const company = document.getElementById('cf-company').value.trim();
+      const type    = document.getElementById('cf-type').value;
+      const message = document.getElementById('cf-message').value.trim();
+      if (!name || !email || !message) return;
+      const subject = encodeURIComponent('[WOOYEONG] ' + type + ' — ' + name);
+      const body    = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Email: ' + email + '\n' +
+        (company ? 'Company: ' + company + '\n' : '') +
+        'Type: ' + type + '\n\n' +
+        message
+      );
+      window.location.href = 'mailto:wy21424@naver.com?subject=' + subject + '&body=' + body;
+    });
+  </script>
 </body>
 </html>
