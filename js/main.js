@@ -6,6 +6,7 @@ const PAGE = (() => {
   if (p === 'solutions.html') return 'solutions';
   if (p === 'about.html') return 'about';
   if (p === 'contact.html') return 'contact';
+  if (p === 'faq.html') return 'faq';
   return 'home';
 })();
 
@@ -32,7 +33,29 @@ document.addEventListener('DOMContentLoaded', () => {
   if (PAGE === 'solutions') {
     initSolutionCards();
   }
+  if (PAGE === 'faq') {
+    initFaq();
+  }
 });
+
+// ── FAQ Accordion ─────────────────────────────────────────────────────────────
+function initFaq() {
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      // Close all items in the same category
+      item.closest('.faq-list').querySelectorAll('.faq-item.open').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+}
 
 // ── Catalog map: category × language → PDF path ──────────────────────────────
 const CATALOG_MAP = {
