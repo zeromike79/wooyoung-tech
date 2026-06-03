@@ -86,7 +86,7 @@
       <div class="hero-content">
         <div class="hero-eyebrow">
           <i class="fa-solid fa-leaf"></i>
-          <span>Agricultural Irrigation Technology</span>
+          <span data-i18n="hero_eyebrow">Agricultural Irrigation Technology</span>
         </div>
         <h1 data-i18n="hero_title">Precision Irrigation<br /><em>Solutions</em></h1>
         <p data-i18n="hero_subtitle">Advanced drip and sprinkler systems engineered for maximum yield and water efficiency — trusted by farmers across the globe.</p>
@@ -98,7 +98,7 @@
     </div>
 
     <div class="hero-scroll" aria-hidden="true">
-      <span>Scroll</span>
+      <span data-i18n="hero_scroll">Scroll</span>
       <i class="fa-solid fa-chevron-down"></i>
     </div>
   </section>
@@ -459,7 +459,7 @@
       </div><!-- /.news-grid -->
 
       <div class="news-footer animate-on-scroll">
-        <a href="#" class="news-all-link" data-i18n="news_view_all">View All News →</a>
+        <a href="#news" class="news-all-link" data-i18n="news_view_all">View All News →</a>
       </div>
     </div>
   </section>
@@ -468,7 +468,64 @@
   <!-- ══════════════════════════════════════════════════════
        FOOTER
   ═══════════════════════════════════════════════════════ -->
-  <div id="contact" style="height:0;overflow:hidden;" aria-hidden="true"></div>
+  <!-- ══════════════════════════════════════════════════════
+       CONTACT SECTION
+  ═══════════════════════════════════════════════════════ -->
+  <div id="contact"></div>
+  <section class="section contact-section" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 id="contact-heading" data-i18n="contact_section_title">Contact Us</h2>
+        <p data-i18n="contact_section_subtitle">Get in touch with our team for product inquiries and support.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Address card -->
+        <div class="contact-card animate-on-scroll">
+          <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 class="contact-card-label" data-i18n="contact_address_label">Address</h3>
+          <p data-i18n="footer_address">365-27, Naseon-ro, Dasan-myeon, Goryeong-gun, Gyeongsangbuk-do, Korea</p>
+          <a href="https://maps.google.com/?q=365-27+Naseon-ro+Dasan-myeon+Goryeong-gun+Gyeongsangbuk-do+Korea"
+             target="_blank" rel="noopener" class="contact-card-link" data-i18n="contact_map_btn">
+            <i class="fa-solid fa-map-location-dot"></i> View on Map
+          </a>
+        </div>
+
+        <!-- Phone / Fax card -->
+        <div class="contact-card animate-on-scroll">
+          <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+          <h3 class="contact-card-label" data-i18n="contact_phone_label">Phone</h3>
+          <p><a href="tel:+82549540885" data-i18n="footer_phone">+82-54-954-0885</a></p>
+          <p class="contact-fax">
+            <span class="contact-fax-label" data-i18n="contact_fax_label">Fax</span>
+            054-954-0883
+          </p>
+        </div>
+
+        <!-- Email card -->
+        <div class="contact-card animate-on-scroll">
+          <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h3 class="contact-card-label" data-i18n="contact_email_label">Email</h3>
+          <p><a href="mailto:wy21424@naver.com" data-i18n="footer_email">wy21424@naver.com</a></p>
+          <a href="mailto:wy21424@naver.com?subject=Product Inquiry — WOOYEONG"
+             class="contact-card-link" data-i18n="contact_inquiry_btn">
+            <i class="fa-solid fa-paper-plane"></i> Send Inquiry
+          </a>
+        </div>
+
+        <!-- Hours card -->
+        <div class="contact-card animate-on-scroll">
+          <div class="contact-card-icon"><i class="fa-solid fa-clock"></i></div>
+          <h3 class="contact-card-label" data-i18n="contact_hours_label">Business Hours</h3>
+          <p data-i18n="contact_hours_value">Mon – Fri  09:00 – 18:00 (KST)</p>
+          <p class="contact-holiday">※ Closed on Korean public holidays</p>
+        </div>
+
+      </div><!-- /.contact-grid -->
+    </div>
+  </section>
+
   <footer id="footer" role="contentinfo">
     <div class="container">
       <div class="footer-top">
@@ -484,10 +541,10 @@
           </a>
           <p class="footer-tagline" data-i18n="footer_tagline">Precision irrigation solutions for a water-efficient world.</p>
           <nav class="footer-social" aria-label="Social media links">
-            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn" title="Coming soon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube" title="Coming soon"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Facebook" title="Coming soon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram" title="Coming soon"><i class="fa-brands fa-instagram"></i></a>
           </nav>
         </div>
 
@@ -498,7 +555,7 @@
             <li><a href="#about" data-i18n="footer_link_about">About Us</a></li>
             <li><a href="#solutions" data-i18n="footer_link_solutions">Solutions</a></li>
             <li><a href="#news" data-i18n="footer_link_news">News</a></li>
-            <li><a href="#" data-i18n="footer_link_careers">Careers</a></li>
+            <li><a href="#contact" data-i18n="footer_link_contact">Contact</a></li>
           </ul>
         </div>
 

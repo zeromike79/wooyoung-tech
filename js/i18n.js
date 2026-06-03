@@ -12,6 +12,8 @@ const i18n = {
     hero_subtitle: "Advanced drip and sprinkler systems engineered for maximum yield and water efficiency — trusted by farmers across the globe.",
     hero_cta_learn: "Learn More",
     hero_cta_contact: "Contact Us",
+    hero_eyebrow: "Agricultural Irrigation Technology",
+    hero_scroll: "Scroll",
 
     // Products Section
     products_section_title: "Our Products",
@@ -111,6 +113,18 @@ const i18n = {
     cf_cta_catalog: "View Full Catalog",
     cf_cta_inquiry: "Request Quotation",
 
+    // Contact Section
+    contact_section_title: "Contact Us",
+    contact_section_subtitle: "Get in touch with our team for product inquiries and support.",
+    contact_address_label: "Address",
+    contact_phone_label: "Phone",
+    contact_fax_label: "Fax",
+    contact_email_label: "Email",
+    contact_map_btn: "View on Map",
+    contact_inquiry_btn: "Send Inquiry",
+    contact_hours_label: "Business Hours",
+    contact_hours_value: "Mon – Fri  09:00 – 18:00 (KST)",
+
     // Footer
     footer_tagline: "A company that realizes scientific farming with water.",
     footer_col_company: "Company",
@@ -119,7 +133,7 @@ const i18n = {
     footer_link_about: "About Us",
     footer_link_solutions: "Solutions",
     footer_link_news: "News",
-    footer_link_careers: "Careers",
+    footer_link_contact: "Contact",
     footer_link_drip: "Drip Tape",
     footer_link_drippers: "Drippers",
     footer_link_sprinklers: "Mini Sprinklers",
@@ -161,6 +175,8 @@ const i18n = {
     hero_subtitle: "최고의 수확량과 수자원 효율을 위해 설계된 첨단 점적·스프링클러 시스템 — 전 세계 농업인의 신뢰를 받습니다.",
     hero_cta_learn: "더 알아보기",
     hero_cta_contact: "문의하기",
+    hero_eyebrow: "농업용 관개 기술",
+    hero_scroll: "스크롤",
 
     products_section_title: "제품 소개",
     products_section_subtitle: "모든 농업 환경에 맞는 종합 관개 부품 라인업.",
@@ -262,7 +278,7 @@ const i18n = {
     footer_link_about: "회사소개",
     footer_link_solutions: "솔루션",
     footer_link_news: "뉴스",
-    footer_link_careers: "채용",
+    footer_link_contact: "문의",
     footer_link_drip: "점적 테이프",
     footer_link_drippers: "드리퍼",
     footer_link_sprinklers: "미니 스프링클러",
@@ -303,6 +319,8 @@ const i18n = {
     hero_subtitle: "最大収量と水利用効率のために設計された先進的な点滴・スプリンクラーシステム — 世界中の農家に信頼されています。",
     hero_cta_learn: "詳しく見る",
     hero_cta_contact: "お問い合わせ",
+    hero_eyebrow: "農業灌漑技術",
+    hero_scroll: "スクロール",
 
     products_section_title: "製品ラインナップ",
     products_section_subtitle: "あらゆる農業ニーズに対応した総合灌漑コンポーネント。",
@@ -404,7 +422,7 @@ const i18n = {
     footer_link_about: "会社概要",
     footer_link_solutions: "ソリューション",
     footer_link_news: "ニュース",
-    footer_link_careers: "採用",
+    footer_link_contact: "お問い合わせ",
     footer_link_drip: "ドリップテープ",
     footer_link_drippers: "ドリッパー",
     footer_link_sprinklers: "ミニスプリンクラー",
@@ -445,6 +463,8 @@ const i18n = {
     hero_subtitle: "为最大产量和水资源利用效率而设计的先进滴灌与喷灌系统 — 深受全球农民信赖。",
     hero_cta_learn: "了解更多",
     hero_cta_contact: "联系我们",
+    hero_eyebrow: "农业灌溉技术",
+    hero_scroll: "滚动",
 
     products_section_title: "产品系列",
     products_section_subtitle: "满足各类农业需求的综合灌溉组件。",
@@ -546,7 +566,7 @@ const i18n = {
     footer_link_about: "关于我们",
     footer_link_solutions: "解决方案",
     footer_link_news: "新闻",
-    footer_link_careers: "招聘",
+    footer_link_contact: "联系",
     footer_link_drip: "滴灌带",
     footer_link_drippers: "滴头",
     footer_link_sprinklers: "微喷头",

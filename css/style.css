@@ -677,6 +677,111 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   .cf-actions .btn, .cf-actions .btn-outline-dark { width: 100%; justify-content: center; }
 }
 
+/* ── Cool-Fog text column (explicit) ────────────────────── */
+.cf-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ============================================================
+   CONTACT SECTION
+   ============================================================ */
+.contact-section { background: var(--clr-bg); }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap);
+}
+
+.contact-card {
+  background: var(--clr-white);
+  border-radius: var(--radius-md);
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.contact-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.contact-card-icon {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: rgba(46,125,50,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--clr-primary);
+  margin-bottom: 4px;
+}
+.contact-card-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--clr-text-muted);
+  margin: 0;
+}
+.contact-card p {
+  font-size: 0.92rem;
+  color: var(--clr-text);
+  line-height: 1.6;
+  margin: 0;
+}
+.contact-card a {
+  color: var(--clr-text);
+  transition: color var(--transition);
+}
+.contact-card a:hover { color: var(--clr-primary); }
+
+.contact-fax {
+  font-size: 0.85rem;
+  color: var(--clr-text-muted);
+}
+.contact-fax-label {
+  font-weight: 700;
+  margin-right: 4px;
+}
+.contact-holiday {
+  font-size: 0.75rem;
+  color: var(--clr-text-muted);
+  margin: 0;
+}
+.contact-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  padding: 8px 18px;
+  border-radius: 100px;
+  background: rgba(46,125,50,0.08);
+  color: var(--clr-primary) !important;
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition: background var(--transition), transform var(--transition);
+}
+.contact-card-link:hover {
+  background: var(--clr-primary);
+  color: var(--clr-white) !important;
+  transform: none;
+}
+
+@media (max-width: 1024px) {
+  .contact-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
 /* ── Category Card Grid Selector ─────────────────────────── */
 .product-category-selector {
   margin-bottom: 40px;
