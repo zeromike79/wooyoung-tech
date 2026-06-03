@@ -106,11 +106,13 @@ function initProductModal() {
 function initHeader() {
   const header = document.getElementById('main-header');
   const onScroll = () => {
-    if (window.scrollY > 60) {
+    if (PAGE !== 'home') {
+      // Sub-pages: always white regardless of scroll position
       header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
+      return;
     }
+    // Homepage: transparent at hero top, white when scrolled past 60px
+    header.classList.toggle('scrolled', window.scrollY > 60);
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
