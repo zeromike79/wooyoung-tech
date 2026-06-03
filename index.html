@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Wooyoung Tech — Precision Irrigation Solutions for maximum yield and water efficiency." />
-  <title>Wooyoung Tech | Precision Irrigation Solutions</title>
+  <meta name="description" content="WOOYEONG TECH — A company that realizes scientific farming with water. Full range of irrigation products." />
+  <title>WOOYEONG TECH | Precision Irrigation</title>
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
@@ -21,8 +21,8 @@
     <div class="container header-inner">
 
       <!-- Logo -->
-      <a href="#hero" class="logo" aria-label="Wooyoung Tech Home">
-        <img src="images/woo_transparent.png" alt="Wooyoung Tech" class="logo-img" width="44" height="44" />
+      <a href="index.html" class="logo" aria-label="Wooyoung Tech Home">
+        <img src="images/woo_transparent.png" alt="Wooyoung Tech" class="logo-img" width="28" height="28" />
         <div class="logo-text">
           <span class="logo-main">WOOYEONG TECH</span>
           <span class="logo-sub">Precision Irrigation</span>
@@ -31,10 +31,10 @@
 
       <!-- Navigation -->
       <nav id="main-nav" role="navigation" aria-label="Main navigation">
-        <a href="#products" data-i18n="nav_products">Products</a>
-        <a href="#solutions" data-i18n="nav_solutions">Solutions</a>
-        <a href="#about" data-i18n="nav_about">About Us</a>
-        <a href="#contact" data-i18n="nav_contact">Contact</a>
+        <a href="products.html" data-i18n="nav_products">Products</a>
+        <a href="solutions.html" data-i18n="nav_solutions">Solutions</a>
+        <a href="about.html" data-i18n="nav_about">About Us</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
 
         <!-- Admin-only language switcher -->
         <div id="admin-lang-bar" role="group" aria-label="Language selector">
@@ -91,8 +91,8 @@
         <h1 data-i18n="hero_title">Precision Irrigation<br /><em>Solutions</em></h1>
         <p data-i18n="hero_subtitle">Advanced drip and sprinkler systems engineered for maximum yield and water efficiency — trusted by farmers across the globe.</p>
         <div class="hero-actions">
-          <a href="#products" class="btn btn-accent" data-i18n="hero_cta_learn">Learn More</a>
-          <a href="#contact" class="btn btn-outline" data-i18n="hero_cta_contact">Contact Us</a>
+          <a href="products.html" class="btn btn-accent" data-i18n="hero_cta_learn">Learn More</a>
+          <a href="contact.html" class="btn btn-outline" data-i18n="hero_cta_contact">Contact Us</a>
         </div>
       </div>
     </div>
@@ -102,6 +102,7 @@
       <i class="fa-solid fa-chevron-down"></i>
     </div>
   </section>
+
 
 
   <!-- ══════════════════════════════════════════════════════
@@ -160,182 +161,142 @@
   </section>
 
 
+
+
   <!-- ══════════════════════════════════════════════════════
-       PRODUCTS
+       HOMEPAGE — PRODUCT CATEGORIES
   ═══════════════════════════════════════════════════════ -->
-  <section id="products" class="section" aria-labelledby="products-heading">
+  <section class="section" id="products-home" aria-labelledby="hp-products-heading">
     <div class="container">
       <div class="section-header animate-on-scroll">
-        <h2 id="products-heading" data-i18n="products_section_title">Our Products</h2>
+        <h2 id="hp-products-heading" data-i18n="products_section_title">Our Products</h2>
         <p data-i18n="products_section_subtitle">Comprehensive irrigation components designed for every agricultural need.</p>
       </div>
 
-      <!-- Category selector — rendered by JS -->
-      <div class="product-category-selector animate-on-scroll"
-           id="product-filter-tabs" role="tablist" aria-label="Product categories">
-        <!-- Rendered by JS from productCategories -->
-      </div>
+      <div class="hp-cat-grid animate-on-scroll">
 
-      <!-- Dynamic grid — filled by JS -->
-      <div class="products-grid" id="products-grid" aria-live="polite" aria-atomic="true">
-        <!-- Cards injected by products.js + main.js -->
-      </div>
-
-      <!-- Pagination -->
-      <div class="product-pagination" id="product-pagination" aria-label="Product pagination">
-        <!-- Rendered by JS -->
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ══════════════════════════════════════════════════════
-       WHY WOOYEONG TECH
-  ═══════════════════════════════════════════════════════ -->
-  <section id="why" class="section section--alt" aria-labelledby="why-heading">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2 id="why-heading" data-i18n="why_section_title">Why Wooyoung Tech</h2>
-        <p data-i18n="why_section_subtitle">Decades of manufacturing excellence combined with field-proven innovation.</p>
-      </div>
-
-      <!-- Block 1: left image / right text -->
-      <div class="why-block animate-on-scroll">
-        <div class="why-img-wrap">
-          <img src="images/wy-3104.jpg"
-               data-i18n-alt="alt_why_manufacturing"
-               alt="Precision manufacturing facility"
-               loading="lazy" width="800" height="600" />
-          <div class="why-img-badge">
-            <i class="fa-solid fa-award"></i>
-            <span data-i18n="why_block1_stat">±0.05 mm tolerance</span>
+        <a href="products.html?cat=drip_tape_hose" class="hp-cat-card">
+          <div class="hp-cat-img"><img src="images/17101.jpg" alt="Drip Tape" loading="lazy" /></div>
+          <div class="hp-cat-body">
+            <h3 data-i18n="hp_cat_drip_tape">Drip Tape &amp; Hose</h3>
+            <span class="hp-cat-arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
-        </div>
-        <div class="why-text">
-          <div class="why-icon" aria-hidden="true">
-            <i class="fa-solid fa-microchip"></i>
-          </div>
-          <h3 data-i18n="why_block1_title">Precision Manufacturing</h3>
-          <p data-i18n="why_block1_desc">Our ISO-certified facilities produce components to tolerances of ±0.05 mm, ensuring every dripper delivers exactly the right flow rate season after season.</p>
-          <span class="why-stat">
-            <i class="fa-solid fa-circle-check"></i>
-            <span data-i18n="why_block1_stat">±0.05 mm tolerance</span>
-          </span>
-        </div>
-      </div>
+        </a>
 
-      <!-- Block 2: right image / left text (reverse) -->
-      <div class="why-block why-block--reverse animate-on-scroll">
-        <div class="why-img-wrap">
-          <img src="images/ref5.JPEG"
-               data-i18n-alt="alt_why_water"
-               alt="Water saving irrigation technology"
-               loading="lazy" width="800" height="600" />
-          <div class="why-img-badge">
-            <i class="fa-solid fa-droplet-slash"></i>
-            <span data-i18n="why_block2_stat">Up to 50% water savings</span>
+        <a href="products.html?cat=mini_sprinklers" class="hp-cat-card">
+          <div class="hp-cat-img"><img src="images/11101.jpg" alt="Mini Sprinklers" loading="lazy" /></div>
+          <div class="hp-cat-body">
+            <h3 data-i18n="hp_cat_sprinklers">Mini Sprinklers</h3>
+            <span class="hp-cat-arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
-        </div>
-        <div class="why-text">
-          <div class="why-icon" aria-hidden="true">
-            <i class="fa-solid fa-droplet"></i>
-          </div>
-          <h3 data-i18n="why_block2_title">Water-Saving Technology</h3>
-          <p data-i18n="why_block2_desc">Wooyoung Tech systems reduce water consumption by up to 50% compared to conventional surface irrigation while improving crop yields.</p>
-          <span class="why-stat">
-            <i class="fa-solid fa-circle-check"></i>
-            <span data-i18n="why_block2_stat">Up to 50% water savings</span>
-          </span>
-        </div>
-      </div>
+        </a>
 
-      <!-- Block 3: left image / right text -->
-      <div class="why-block animate-on-scroll">
-        <div class="why-img-wrap">
-          <img src="images/ref1.JPEG"
-               data-i18n-alt="alt_why_global"
-               alt="Global irrigation deployment"
-               loading="lazy" width="800" height="600" />
-          <div class="why-img-badge">
-            <i class="fa-solid fa-earth-americas"></i>
-            <span data-i18n="why_block3_stat">40+ countries deployed</span>
+        <a href="products.html?cat=filters" class="hp-cat-card">
+          <div class="hp-cat-img"><img src="images/wy-3104.jpg" alt="Filters" loading="lazy" /></div>
+          <div class="hp-cat-body">
+            <h3 data-i18n="hp_cat_filters">Filters</h3>
+            <span class="hp-cat-arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
-        </div>
-        <div class="why-text">
-          <div class="why-icon" aria-hidden="true">
-            <i class="fa-solid fa-globe"></i>
+        </a>
+
+        <a href="products.html?cat=valves" class="hp-cat-card">
+          <div class="hp-cat-img"><img src="images/wy-4101.jpg" alt="Valves" loading="lazy" /></div>
+          <div class="hp-cat-body">
+            <h3 data-i18n="hp_cat_valves">Valves</h3>
+            <span class="hp-cat-arrow"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
-          <h3 data-i18n="why_block3_title">Global Field Expertise</h3>
-          <p data-i18n="why_block3_desc">From arid deserts to tropical greenhouses, our products are deployed across 40+ countries, validated in the world's most demanding growing conditions.</p>
-          <span class="why-stat">
-            <i class="fa-solid fa-circle-check"></i>
-            <span data-i18n="why_block3_stat">40+ countries deployed</span>
-          </span>
-        </div>
+        </a>
+
+        <a href="products.html?cat=drip_valves" class="hp-cat-card">
+          <div class="hp-cat-img"><img src="images/wy-5101.jpg" alt="Drip Valves" loading="lazy" /></div>
+          <div class="hp-cat-body">
+            <h3 data-i18n="hp_cat_drip_valves">Drip Valves</h3>
+            <span class="hp-cat-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="products.html?cat=wrench_fittings" class="hp-cat-card">
+          <div class="hp-cat-img"><img src="images/7101.jpg" alt="Wrench Fittings" loading="lazy" /></div>
+          <div class="hp-cat-body">
+            <h3 data-i18n="hp_cat_fittings">Wrench Fittings</h3>
+            <span class="hp-cat-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="products.html?cat=nutriculture" class="hp-cat-card">
+          <div class="hp-cat-img"><img src="images/13101.jpg" alt="Nutriculture" loading="lazy" /></div>
+          <div class="hp-cat-body">
+            <h3 data-i18n="hp_cat_nutriculture">Nutriculture</h3>
+            <span class="hp-cat-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="products.html?cat=cooling" class="hp-cat-card hp-cat-card--accent">
+          <div class="hp-cat-img"><img src="images/18101.jpg" alt="Cool-Fog" loading="lazy" /></div>
+          <div class="hp-cat-body">
+            <h3 data-i18n="hp_cat_coolfog">Cool-Fog System</h3>
+            <span class="hp-cat-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+      </div><!-- /.hp-cat-grid -->
+
+      <div class="hp-products-cta animate-on-scroll">
+        <a href="products.html" class="btn btn-primary">
+          <i class="fa-solid fa-th-large"></i>
+          <span data-i18n="home_products_viewall">View All Products</span>
+        </a>
       </div>
 
     </div>
   </section>
 
-
   <!-- ══════════════════════════════════════════════════════
-       SOLUTIONS
+       SOLUTIONS PREVIEW
   ═══════════════════════════════════════════════════════ -->
-  <section id="solutions" class="section" aria-labelledby="solutions-heading">
+  <section id="solutions" class="section" style="background:#1a1a1a;" aria-labelledby="sol-home-heading">
     <div class="container">
       <div class="section-header animate-on-scroll">
-        <h2 id="solutions-heading" data-i18n="solutions_section_title">Irrigation Solutions</h2>
-        <p data-i18n="solutions_section_subtitle">Purpose-built systems tailored to every growing environment.</p>
+        <h2 id="sol-home-heading" style="color:#fff;" data-i18n="solutions_section_title">Irrigation Solutions</h2>
+        <p style="color:rgba(255,255,255,.6);" data-i18n="solutions_section_subtitle">Purpose-built systems tailored to every growing environment.</p>
       </div>
-
       <div class="solutions-grid">
-
-        <!-- Open Field -->
         <div class="solution-card animate-on-scroll" role="article">
-          <img src="images/p2_sprinkler.jpeg"
-               data-i18n-alt="alt_solution_openfield"
-               alt="Open field irrigation"
-               loading="lazy" width="900" height="700" />
+          <img src="images/p2_sprinkler.jpeg" alt="Open field irrigation" loading="lazy" />
           <div class="solution-base-overlay" aria-hidden="true"></div>
           <span class="solution-tag">Open Field</span>
           <div class="solution-content">
             <h3 data-i18n="solution_openfield_name">Open Field</h3>
-            <p class="solution-desc" data-i18n="solution_openfield_desc">High-efficiency drip and sprinkler systems for large-scale row crops, grains, and vegetables in open agricultural land.</p>
+            <p class="solution-desc" data-i18n="solution_openfield_desc">High-efficiency drip and sprinkler systems for large-scale row crops.</p>
           </div>
         </div>
-
-        <!-- Greenhouse -->
         <div class="solution-card animate-on-scroll" role="article">
-          <img src="images/ref4.JPEG"
-               data-i18n-alt="alt_solution_greenhouse"
-               alt="Greenhouse irrigation"
-               loading="lazy" width="900" height="700" />
+          <img src="images/ref4.JPEG" alt="Greenhouse irrigation" loading="lazy" />
           <div class="solution-base-overlay" aria-hidden="true"></div>
           <span class="solution-tag">Greenhouse</span>
           <div class="solution-content">
             <h3 data-i18n="solution_greenhouse_name">Greenhouse</h3>
-            <p class="solution-desc" data-i18n="solution_greenhouse_desc">Precision micro-irrigation for protected cultivation, delivering water and nutrients directly to the root zone with minimal waste.</p>
+            <p class="solution-desc" data-i18n="solution_greenhouse_desc">Precision micro-irrigation delivering water directly to the root zone.</p>
           </div>
         </div>
-
-        <!-- Orchard -->
         <div class="solution-card animate-on-scroll" role="article">
-          <img src="images/p3_veggie.jpeg"
-               data-i18n-alt="alt_solution_orchard"
-               alt="Orchard irrigation"
-               loading="lazy" width="900" height="700" />
+          <img src="images/p3_veggie.jpeg" alt="Orchard irrigation" loading="lazy" />
           <div class="solution-base-overlay" aria-hidden="true"></div>
           <span class="solution-tag">Orchard</span>
           <div class="solution-content">
             <h3 data-i18n="solution_orchard_name">Orchard</h3>
-            <p class="solution-desc" data-i18n="solution_orchard_desc">Robust drip and under-tree sprinkler networks designed for fruit trees, vineyards, and perennial crops on uneven terrain.</p>
+            <p class="solution-desc" data-i18n="solution_orchard_desc">Robust drip networks for fruit trees and perennial crops.</p>
           </div>
         </div>
-
+      </div>
+      <div class="hp-products-cta animate-on-scroll" style="margin-top:40px;">
+        <a href="solutions.html" class="btn btn-accent">
+          <i class="fa-solid fa-arrow-right"></i>
+          <span data-i18n="page_solutions_title">Irrigation Solutions</span>
+        </a>
       </div>
     </div>
   </section>
-
 
   <!-- ══════════════════════════════════════════════════════
        ABOUT
@@ -465,74 +426,13 @@
   </section>
 
 
-  <!-- ══════════════════════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════════════════════ -->
-  <!-- ══════════════════════════════════════════════════════
-       CONTACT SECTION
-  ═══════════════════════════════════════════════════════ -->
-  <div id="contact"></div>
-  <section class="section contact-section" aria-labelledby="contact-heading">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2 id="contact-heading" data-i18n="contact_section_title">Contact Us</h2>
-        <p data-i18n="contact_section_subtitle">Get in touch with our team for product inquiries and support.</p>
-      </div>
-
-      <div class="contact-grid">
-
-        <!-- Address card -->
-        <div class="contact-card animate-on-scroll">
-          <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
-          <h3 class="contact-card-label" data-i18n="contact_address_label">Address</h3>
-          <p data-i18n="footer_address">365-27, Naseon-ro, Dasan-myeon, Goryeong-gun, Gyeongsangbuk-do, Korea</p>
-          <a href="https://maps.google.com/?q=365-27+Naseon-ro+Dasan-myeon+Goryeong-gun+Gyeongsangbuk-do+Korea"
-             target="_blank" rel="noopener" class="contact-card-link" data-i18n="contact_map_btn">
-            <i class="fa-solid fa-map-location-dot"></i> View on Map
-          </a>
-        </div>
-
-        <!-- Phone / Fax card -->
-        <div class="contact-card animate-on-scroll">
-          <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
-          <h3 class="contact-card-label" data-i18n="contact_phone_label">Phone</h3>
-          <p><a href="tel:+82549540885" data-i18n="footer_phone">+82-54-954-0885</a></p>
-          <p class="contact-fax">
-            <span class="contact-fax-label" data-i18n="contact_fax_label">Fax</span>
-            054-954-0883
-          </p>
-        </div>
-
-        <!-- Email card -->
-        <div class="contact-card animate-on-scroll">
-          <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
-          <h3 class="contact-card-label" data-i18n="contact_email_label">Email</h3>
-          <p><a href="mailto:wy21424@naver.com" data-i18n="footer_email">wy21424@naver.com</a></p>
-          <a href="mailto:wy21424@naver.com?subject=Product Inquiry — WOOYEONG"
-             class="contact-card-link" data-i18n="contact_inquiry_btn">
-            <i class="fa-solid fa-paper-plane"></i> Send Inquiry
-          </a>
-        </div>
-
-        <!-- Hours card -->
-        <div class="contact-card animate-on-scroll">
-          <div class="contact-card-icon"><i class="fa-solid fa-clock"></i></div>
-          <h3 class="contact-card-label" data-i18n="contact_hours_label">Business Hours</h3>
-          <p data-i18n="contact_hours_value">Mon – Fri  09:00 – 18:00 (KST)</p>
-          <p class="contact-holiday">※ Closed on Korean public holidays</p>
-        </div>
-
-      </div><!-- /.contact-grid -->
-    </div>
-  </section>
-
   <footer id="footer" role="contentinfo">
     <div class="container">
       <div class="footer-top">
 
         <!-- Brand -->
         <div class="footer-brand">
-          <a href="#hero" class="logo">
+          <a href="index.html" class="logo">
             <img src="images/woo_transparent.png" alt="Wooyoung Tech" class="logo-img logo-img--footer" width="40" height="40" />
             <div class="logo-text">
               <span class="logo-main">WOOYEONG TECH</span>
@@ -552,10 +452,10 @@
         <div class="footer-col">
           <h4 data-i18n="footer_col_company">Company</h4>
           <ul>
-            <li><a href="#about" data-i18n="footer_link_about">About Us</a></li>
-            <li><a href="#solutions" data-i18n="footer_link_solutions">Solutions</a></li>
+            <li><a href="about.html" data-i18n="footer_link_about">About Us</a></li>
+            <li><a href="solutions.html" data-i18n="footer_link_solutions">Solutions</a></li>
             <li><a href="#news" data-i18n="footer_link_news">News</a></li>
-            <li><a href="#contact" data-i18n="footer_link_contact">Contact</a></li>
+            <li><a href="contact.html" data-i18n="footer_link_contact">Contact</a></li>
           </ul>
         </div>
 
@@ -563,10 +463,10 @@
         <div class="footer-col">
           <h4 data-i18n="footer_col_products">Products</h4>
           <ul>
-            <li><a href="#products" data-i18n="footer_link_drip">Drip Tape</a></li>
-            <li><a href="#products" data-i18n="footer_link_drippers">Drippers</a></li>
-            <li><a href="#products" data-i18n="footer_link_sprinklers">Mini Sprinklers</a></li>
-            <li><a href="#products" data-i18n="footer_link_smart">Smart Systems</a></li>
+            <li><a href="products.html" data-i18n="footer_link_drip">Drip Tape</a></li>
+            <li><a href="products.html" data-i18n="footer_link_drippers">Drippers</a></li>
+            <li><a href="products.html" data-i18n="footer_link_sprinklers">Mini Sprinklers</a></li>
+            <li><a href="products.html" data-i18n="footer_link_smart">Smart Systems</a></li>
           </ul>
         </div>
 
@@ -623,7 +523,7 @@
               <i class="fa-solid fa-file-pdf"></i>
               <span data-i18n="modal_download_catalog">Download Catalog</span>
             </a>
-            <a href="#contact" class="btn btn-outline-green modal-contact-btn">
+            <a href="contact.html" class="btn btn-outline-green modal-contact-btn">
               <i class="fa-solid fa-envelope"></i>
               <span data-i18n="modal_contact">Contact Us</span>
             </a>
@@ -638,7 +538,6 @@
 
   <!-- ── Scripts ──────────────────────────────────────── -->
   <script src="js/i18n.js"></script>
-  <script src="js/products.js"></script>
   <script src="js/lang.js"></script>
   <script src="js/main.js"></script>
 

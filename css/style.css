@@ -677,6 +677,154 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   .cf-actions .btn, .cf-actions .btn-outline-dark { width: 100%; justify-content: center; }
 }
 
+/* ============================================================
+   PAGE HERO (sub-pages)
+   ============================================================ */
+.page-hero {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  margin-top: var(--header-h);
+}
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.65) 0%, rgba(27,94,32,0.5) 100%);
+}
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 40px;
+  color: var(--clr-white);
+}
+.page-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 12px;
+}
+.page-breadcrumb a { color: rgba(255,255,255,0.7); transition: color var(--transition); }
+.page-breadcrumb a:hover { color: var(--clr-white); }
+.page-breadcrumb i { font-size: 0.6rem; }
+.page-hero-content h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.page-hero-content p {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  max-width: 560px;
+}
+
+/* Nav active link */
+#main-nav a.active {
+  color: var(--clr-primary) !important;
+  background: rgba(46,125,50,0.08) !important;
+  border-radius: var(--radius-sm);
+}
+#main-header:not(.scrolled) #main-nav a.active {
+  color: var(--clr-white) !important;
+  background: rgba(255,255,255,0.15) !important;
+}
+
+/* ============================================================
+   HOMEPAGE CATEGORY CARDS
+   ============================================================ */
+.hp-cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.hp-cat-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--clr-white);
+  border: 1px solid var(--clr-border);
+  text-decoration: none;
+  color: var(--clr-text);
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+  position: relative;
+}
+.hp-cat-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--clr-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+.hp-cat-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+  border-color: transparent;
+}
+.hp-cat-card:hover::after { transform: scaleX(1); }
+
+.hp-cat-card--accent::after { background: var(--clr-accent); }
+
+.hp-cat-img {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+.hp-cat-img img {
+  width: 100%; height: 100%;
+  object-fit: contain;
+  padding: 10px;
+  transition: transform 0.4s ease;
+}
+.hp-cat-card:hover .hp-cat-img img { transform: scale(1.06); }
+
+.hp-cat-body {
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.hp-cat-body h3 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--clr-text);
+  margin: 0;
+  line-height: 1.3;
+}
+.hp-cat-arrow {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: rgba(46,125,50,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: var(--clr-primary);
+  flex-shrink: 0;
+  transition: background var(--transition), color var(--transition);
+}
+.hp-cat-card:hover .hp-cat-arrow {
+  background: var(--clr-primary);
+  color: var(--clr-white);
+}
+.hp-cat-card--accent:hover .hp-cat-arrow { background: var(--clr-accent); }
+
+.hp-products-cta { text-align: center; }
+
+@media (max-width: 1024px) { .hp-cat-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 768px)  { .hp-cat-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px)  { .hp-cat-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
+
 /* ── Cool-Fog text column (explicit) ────────────────────── */
 .cf-text {
   display: flex;

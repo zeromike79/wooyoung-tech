@@ -37,7 +37,7 @@ const i18n = {
     product_see_more: "See More →",
 
     // Why Section
-    why_section_title: "Why Wooyoung Tech",
+    why_section_title: "Why WOOYEONG TECH",
     why_section_subtitle: "Decades of manufacturing excellence combined with field-proven innovation.",
     why_block1_title: "Precision Manufacturing",
     why_block1_desc: "Our ISO-certified facilities produce components to tolerances of ±0.05 mm, ensuring every dripper delivers exactly the right flow rate season after season.",
@@ -125,6 +125,29 @@ const i18n = {
     contact_hours_label: "Business Hours",
     contact_hours_value: "Mon – Fri  09:00 – 18:00 (KST)",
 
+    // Homepage category cards
+    hp_cat_drip_tape: "Drip Tape & Hose",
+    hp_cat_sprinklers: "Mini Sprinklers",
+    hp_cat_filters: "Filters",
+    hp_cat_valves: "Valves",
+    hp_cat_drip_valves: "Drip Valves & Fittings",
+    hp_cat_fittings: "Wrench Fittings",
+    hp_cat_nutriculture: "Nutriculture Materials",
+    hp_cat_coolfog: "Cool-Fog System",
+
+    // Page titles
+    home_products_viewall: "View All Products",
+    home_about_cta: "Learn More",
+    page_products_title: "Product Catalog",
+    page_products_subtitle: "Full range of WOOYEONG irrigation components — 19 categories, 200+ products.",
+    page_solutions_title: "Irrigation Solutions",
+    page_solutions_subtitle: "Purpose-built systems for every growing environment.",
+    page_about_title: "About WOOYEONG TECH",
+    page_about_subtitle: "A company that realizes scientific farming with water since 1998.",
+    page_contact_title: "Contact Us",
+    page_contact_subtitle: "We are here for your product inquiries and support.",
+    breadcrumb_home: "Home",
+
     // Footer
     footer_tagline: "A company that realizes scientific farming with water.",
     footer_col_company: "Company",
@@ -198,13 +221,13 @@ const i18n = {
     product_smart_desc: "데이터 기반 작물 수분 관리를 위한 IoT 자동화 시스템.",
     product_see_more: "자세히 보기 →",
 
-    why_section_title: "우영테크를 선택하는 이유",
+    why_section_title: "우영농자재를 선택하는 이유",
     why_section_subtitle: "수십 년의 제조 우수성과 현장 검증된 혁신의 결합.",
     why_block1_title: "정밀 제조",
     why_block1_desc: "ISO 인증 시설에서 ±0.05 mm 공차로 생산되는 부품은 매 시즌 정확한 유량을 보장합니다.",
     why_block1_stat: "±0.05 mm 공차",
     why_block2_title: "절수 기술",
-    why_block2_desc: "우영테크 시스템은 기존 지표면 관개 대비 최대 50%의 물 절약과 동시에 수확량을 향상시킵니다.",
+    why_block2_desc: "WOOYEONG 시스템은 기존 지표면 관개 대비 최대 50%의 물 절약과 동시에 수확량을 향상시킵니다.",
     why_block2_stat: "최대 50% 절수",
     why_block3_title: "글로벌 현장 전문성",
     why_block3_desc: "사막부터 열대 온실까지, 40개국 이상에 납품되어 세계에서 가장 까다로운 재배 환경에서 검증되었습니다.",
@@ -342,7 +365,7 @@ const i18n = {
     product_smart_desc: "データドリブンな作物水管理のためのIoT自動化システム。",
     product_see_more: "詳細を見る →",
 
-    why_section_title: "ウーヨンテックを選ぶ理由",
+    why_section_title: "WOOYEONG TECHを選ぶ理由",
     why_section_subtitle: "数十年の製造卓越性と現場実証済みのイノベーションの融合。",
     why_block1_title: "精密製造",
     why_block1_desc: "ISO認定施設で±0.05 mmの公差で製造されたコンポーネントは、シーズンを問わず正確な流量を保証します。",
@@ -486,7 +509,7 @@ const i18n = {
     product_smart_desc: "数据驱动的作物水分管理物联网自动化系统。",
     product_see_more: "查看详情 →",
 
-    why_section_title: "选择优英科技的理由",
+    why_section_title: "选择优英农业资材的理由",
     why_section_subtitle: "数十年制造卓越与现场验证创新的完美结合。",
     why_block1_title: "精密制造",
     why_block1_desc: "我们的ISO认证工厂以±0.05 mm的公差生产零部件，确保每个滴头在每个季节都能精准输水。",

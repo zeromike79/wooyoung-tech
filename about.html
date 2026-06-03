@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="font-en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About WOOYEONG TECH — scientific farming with water since 1998." />
+  <title>About Us | WOOYEONG TECH</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header id="main-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Wooyoung Tech Home">
+        <img src="images/woo_transparent.png" alt="Wooyoung Tech" class="logo-img" width="28" height="28" />
+        <div class="logo-text">
+          <span class="logo-main">WOOYEONG TECH</span>
+          <span class="logo-sub">Precision Irrigation</span>
+        </div>
+      </a>
+      <nav id="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="products.html" data-i18n="nav_products">Products</a>
+        <a href="solutions.html" data-i18n="nav_solutions">Solutions</a>
+        <a href="about.html" class="active" data-i18n="nav_about">About Us</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        <div id="admin-lang-bar" role="group" aria-label="Language selector">
+          <label for="lang-selector" style="color:#666;font-size:.8rem;font-weight:600;" data-i18n="lang_label">Language</label>
+          <select id="lang-selector" aria-label="Select language">
+            <option value="en">English</option>
+            <option value="ko">한국어</option>
+            <option value="ja">日本語</option>
+            <option value="zh">中文</option>
+          </select>
+        </div>
+      </nav>
+      <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div id="nav-overlay" aria-hidden="true"></div>
+
+  <section class="page-hero" style="background-image:url('images/ref1.JPEG');" aria-label="Page header">
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content animate-on-scroll">
+      <p class="page-breadcrumb">
+        <a href="index.html" data-i18n="breadcrumb_home">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span data-i18n="page_about_title">Page</span>
+      </p>
+      <h1 data-i18n="page_about_title">Page Title</h1>
+      <p data-i18n="page_about_subtitle">Subtitle</p>
+    </div>
+  </section>
+
+<!-- ══════════════════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════════════════ -->
+  <section id="about" class="section" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-inner">
+
+        <!-- Text side -->
+        <div class="about-text animate-on-scroll">
+          <p class="about-sub" data-i18n="about_section_subtitle">A trusted partner in agricultural irrigation since 1998.</p>
+          <h2 id="about-heading" data-i18n="about_section_title">About Wooyoung Tech</h2>
+          <p data-i18n="about_desc1">Wooyoung Tech Co., Ltd. was established with a single mission: to help farmers grow more with less. We design and manufacture a complete range of irrigation products — from individual drip emitters to full turnkey systems — that increase crop yields, conserve precious water resources, and reduce operational costs.</p>
+          <p data-i18n="about_desc2">Our R&amp;D team continuously develops next-generation solutions integrating sensor technology, AI-driven scheduling, and sustainable materials, ensuring our customers stay ahead in an era of climate uncertainty.</p>
+          <a href="#contact" class="btn btn-primary" data-i18n="about_cta">Learn More About Us</a>
+        </div>
+
+        <!-- Stats side -->
+        <div class="stats-grid animate-on-scroll">
+
+          <div class="stat-card">
+            <div class="stat-number">
+              <span data-i18n="stat_founded_value">1998</span><span class="stat-suffix" data-i18n="stat_founded_suffix"></span>
+            </div>
+            <div class="stat-label" data-i18n="stat_founded">Founded</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number">
+              <span data-count="300" data-i18n="stat_products_value">300</span><span class="stat-suffix" data-i18n="stat_products_suffix">+</span>
+            </div>
+            <div class="stat-label" data-i18n="stat_products">Products</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number">
+              <span data-count="40" data-i18n="stat_countries_value">40</span><span class="stat-suffix" data-i18n="stat_countries_suffix">+</span>
+            </div>
+            <div class="stat-label" data-i18n="stat_countries">Export Countries</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number">
+              <span data-count="5000" data-i18n="stat_clients_value">5,000</span><span class="stat-suffix" data-i18n="stat_clients_suffix">+</span>
+            </div>
+            <div class="stat-label" data-i18n="stat_clients">Global Clients</div>
+          </div>
+
+        </div><!-- /.stats-grid -->
+      </div><!-- /.about-inner -->
+    </div>
+  </section>
+
+<footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/woo_transparent.png" alt="Wooyoung Tech" class="logo-img logo-img--footer" width="40" height="40" />
+            <div class="logo-text">
+              <span class="logo-main">WOOYEONG TECH</span>
+              <span class="logo-sub">Precision Irrigation</span>
+            </div>
+          </a>
+          <p class="footer-tagline" data-i18n="footer_tagline">Precision irrigation solutions for a water-efficient world.</p>
+          <nav class="footer-social" aria-label="Social media links">
+            <a href="#" aria-label="LinkedIn" title="Coming soon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube" title="Coming soon"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Facebook" title="Coming soon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram" title="Coming soon"><i class="fa-brands fa-instagram"></i></a>
+          </nav>
+        </div>
+
+        <!-- Company links -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_col_company">Company</h4>
+          <ul>
+            <li><a href="about.html" data-i18n="footer_link_about">About Us</a></li>
+            <li><a href="solutions.html" data-i18n="footer_link_solutions">Solutions</a></li>
+            <li><a href="index.html#news" data-i18n="footer_link_news">News</a></li>
+            <li><a href="contact.html" data-i18n="footer_link_contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Product links -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_col_products">Products</h4>
+          <ul>
+            <li><a href="products.html" data-i18n="footer_link_drip">Drip Tape</a></li>
+            <li><a href="products.html" data-i18n="footer_link_drippers">Drippers</a></li>
+            <li><a href="products.html" data-i18n="footer_link_sprinklers">Mini Sprinklers</a></li>
+            <li><a href="products.html" data-i18n="footer_link_smart">Smart Systems</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact info -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_col_contact">Contact Us</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span data-i18n="footer_address">365-27, Naseon-ro, Dasan-myeon, Goryeong-gun, Gyeongsangbuk-do, Korea</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+82549540885" data-i18n="footer_phone">+82-54-954-0885</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-fax" aria-hidden="true"></i>
+              <span>FAX. 054-954-0883</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:wy21424@naver.com" data-i18n="footer_email">wy21424@naver.com</a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!-- /.footer-top -->
+
+      <div class="footer-bottom">
+        <p data-i18n="footer_copyright">© 2026 Wooyoung Tech Co., Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

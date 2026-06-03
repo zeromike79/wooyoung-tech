@@ -1,15 +1,37 @@
 // main.js — Interactions & Animations
 
+const PAGE = (() => {
+  const p = location.pathname.split('/').pop() || 'index.html';
+  if (p === 'products.html') return 'products';
+  if (p === 'solutions.html') return 'solutions';
+  if (p === 'about.html') return 'about';
+  if (p === 'contact.html') return 'contact';
+  return 'home';
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
   initMobileMenu();
-  initCoolFog();
-  initProducts();
-  initProductModal();
+  // Sub-pages: header always shows white (no fullscreen hero)
+  if (PAGE !== 'home') {
+    document.getElementById('main-header')?.classList.add('scrolled');
+  }
+
   initScrollAnimations();
   initCounters();
-  initSolutionCards();
   initSmoothScroll();
+
+  if (PAGE === 'home') {
+    initCoolFog();
+    initSolutionCards();
+  }
+  if (PAGE === 'products') {
+    initProducts();
+    initProductModal();
+  }
+  if (PAGE === 'solutions') {
+    initSolutionCards();
+  }
 });
 
 // ── Catalog map: category × language → PDF path ──────────────────────────────
@@ -250,7 +272,9 @@ function initProducts() {
   const paginationWrap = document.getElementById('product-pagination');
   if (!grid || !tabsWrap || !paginationWrap) return;
 
-  let activeCategory = 'all';
+  // Pre-select category from URL param: products.html?cat=filters
+  const urlCat = new URLSearchParams(location.search).get('cat');
+  let activeCategory = (urlCat && productCategories.find(c => c.id === urlCat)) ? urlCat : 'all';
   let currentPage = 1;
 
   function getLang() { return window.__currentLang || 'en'; }
