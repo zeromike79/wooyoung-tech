@@ -60,7 +60,7 @@ const i18n = {
     // About Section
     about_section_title: "About Wooyoung Tech",
     about_section_subtitle: "A trusted partner in agricultural irrigation since 1998.",
-    about_desc1: "Wooyoung Tech Co., Ltd. was established with a single mission: to help farmers grow more with less. We design and manufacture a complete range of irrigation products — from individual drip emitters to full turnkey systems — that increase crop yields, conserve precious water resources, and reduce operational costs.",
+    about_desc1: "WOOYEONG Agricultural Materials was established with a single mission: to help farmers grow more with less. We design and manufacture a complete range of irrigation products — from individual drip emitters to full turnkey systems — that increase crop yields, conserve precious water resources, and reduce operational costs.",
     about_desc2: "Our R&D team continuously develops next-generation solutions integrating sensor technology, AI-driven scheduling, and sustainable materials, ensuring our customers stay ahead in an era of climate uncertainty.",
     about_cta: "Learn More About Us",
     stat_founded: "Founded",
@@ -112,7 +112,7 @@ const i18n = {
     cf_cta_inquiry: "Request Quotation",
 
     // Footer
-    footer_tagline: "Precision irrigation solutions for a water-efficient world.",
+    footer_tagline: "A company that realizes scientific farming with water.",
     footer_col_company: "Company",
     footer_col_products: "Products",
     footer_col_contact: "Contact Us",
@@ -124,10 +124,10 @@ const i18n = {
     footer_link_drippers: "Drippers",
     footer_link_sprinklers: "Mini Sprinklers",
     footer_link_smart: "Smart Systems",
-    footer_address: "123 Industrial Complex, Ansan-si, Gyeonggi-do, South Korea",
-    footer_phone: "+82-31-000-0000",
-    footer_email: "info@wooyoungtech.com",
-    footer_copyright: "© 2026 Wooyoung Tech Co., Ltd. All rights reserved.",
+    footer_address: "365-27, Naseon-ro, Dasan-myeon, Goryeong-gun, Gyeongsangbuk-do, Korea",
+    footer_phone: "+82-54-954-0885",
+    footer_email: "wy21424@naver.com",
+    footer_copyright: "© 2026 WOOYEONG Agricultural Materials All rights reserved.",
 
     // Alt texts
     alt_hero_video: "Irrigation system in field",
@@ -205,7 +205,7 @@ const i18n = {
 
     about_section_title: "우영테크 소개",
     about_section_subtitle: "1998년부터 농업용 관개의 신뢰할 수 있는 파트너.",
-    about_desc1: "우영테크 주식회사는 단 하나의 사명으로 설립되었습니다: 농업인이 더 적은 자원으로 더 많이 수확할 수 있도록 돕는 것. 개별 드리퍼부터 완전 턴키 시스템까지 다양한 관개 제품을 설계·제조하여 작물 수확량을 높이고 수자원을 보전하며 운영 비용을 절감합니다.",
+    about_desc1: "우영농자재는 단 하나의 사명으로 설립되었습니다: 농업인이 더 적은 자원으로 더 많이 수확할 수 있도록 돕는 것. 개별 드리퍼부터 완전 턴키 시스템까지 다양한 관개 제품을 설계·제조하여 작물 수확량을 높이고 수자원을 보전하며 운영 비용을 절감합니다.",
     about_desc2: "R&D팀은 센서 기술, AI 기반 일정 관리, 친환경 소재를 통합한 차세대 솔루션을 지속적으로 개발하여 기후 불확실성 시대에도 고객이 앞서 나갈 수 있도록 지원합니다.",
     about_cta: "회사 소개 더 보기",
     stat_founded: "설립 연도",
@@ -255,7 +255,7 @@ const i18n = {
     cf_cta_catalog: "전체 카탈로그 보기",
     cf_cta_inquiry: "견적 문의",
 
-    footer_tagline: "물 효율적인 세상을 위한 정밀 관개 솔루션.",
+    footer_tagline: "물과 함께 과학 영농을 실현하는 기업",
     footer_col_company: "회사",
     footer_col_products: "제품",
     footer_col_contact: "문의",
@@ -267,10 +267,10 @@ const i18n = {
     footer_link_drippers: "드리퍼",
     footer_link_sprinklers: "미니 스프링클러",
     footer_link_smart: "스마트 시스템",
-    footer_address: "경기도 안산시 산업단지 123번지",
-    footer_phone: "+82-31-000-0000",
-    footer_email: "info@wooyoungtech.com",
-    footer_copyright: "© 2026 우영테크 주식회사. All rights reserved.",
+    footer_address: "경상북도 고령군 다산면 나선로 365-27",
+    footer_phone: "+82-54-954-0885",
+    footer_email: "wy21424@naver.com",
+    footer_copyright: "© 2026 우영농자재. All rights reserved.",
 
     alt_hero_video: "농지의 관개 시스템",
     alt_product_drip_tape: "점적 테이프 제품",
@@ -347,7 +347,7 @@ const i18n = {
 
     about_section_title: "ウーヨンテックについて",
     about_section_subtitle: "1998年から農業灌漑の信頼できるパートナー。",
-    about_desc1: "ウーヨンテック株式会社はひとつの使命のもとに設立されました：農家がより少ない資源でより多く収穫できるよう支援すること。個別のドリッパーから完全ターンキーシステムまで、幅広い灌漑製品を設計・製造し、収量向上、水資源保全、運用コスト削減を実現します。",
+    about_desc1: "우영농자재(주)はひとつの使命のもとに設立されました：農家がより少ない資源でより多く収穫できるよう支援すること。個別のドリッパーから完全ターンキーシステムまで、幅広い灌漑製品を設計・製造し、収量向上、水資源保全、運用コスト削減を実現します。",
     about_desc2: "R&Dチームはセンサー技術、AIスケジューリング、持続可能な素材を統合した次世代ソリューションを継続的に開発し、気候の不確実性の時代においてもお客様が先導できるよう支援します。",
     about_cta: "会社概要をもっと見る",
     stat_founded: "設立年",
@@ -397,7 +397,7 @@ const i18n = {
     cf_cta_catalog: "カタログを見る",
     cf_cta_inquiry: "見積もり依頼",
 
-    footer_tagline: "水効率の高い世界のための精密灌漑ソリューション。",
+    footer_tagline: "水と共に科学農業を実現する企業",
     footer_col_company: "会社",
     footer_col_products: "製品",
     footer_col_contact: "お問い合わせ",
@@ -409,10 +409,10 @@ const i18n = {
     footer_link_drippers: "ドリッパー",
     footer_link_sprinklers: "ミニスプリンクラー",
     footer_link_smart: "スマートシステム",
-    footer_address: "韓国 京畿道 安山市 産業団地 123",
-    footer_phone: "+82-31-000-0000",
-    footer_email: "info@wooyoungtech.com",
-    footer_copyright: "© 2026 ウーヨンテック株式会社 All rights reserved.",
+    footer_address: "韓国 慶尚北道 高霊郡 多山面 羅仙路 365-27",
+    footer_phone: "+82-54-954-0885",
+    footer_email: "wy21424@naver.com",
+    footer_copyright: "© 2026 WOOYEONG Agricultural Materials. All rights reserved.",
 
     alt_hero_video: "農地の灌漑システム",
     alt_product_drip_tape: "ドリップテープ製品",
@@ -489,7 +489,7 @@ const i18n = {
 
     about_section_title: "关于优英科技",
     about_section_subtitle: "自1998年以来，农业灌溉领域值得信赖的合作伙伴。",
-    about_desc1: "优英科技有限公司以一个使命创立：帮助农民用更少的资源收获更多。我们设计和制造从单个滴头到完整交钥匙系统的全系列灌溉产品，提高作物产量、节约宝贵水资源并降低运营成本。",
+    about_desc1: "优英农业资材有限公司以一个使命创立：帮助农民用更少的资源收获更多。我们设计和制造从单个滴头到完整交钥匙系统的全系列灌溉产品，提高作物产量、节约宝贵水资源并降低运营成本。",
     about_desc2: "我们的研发团队持续开发融合传感器技术、AI调度和可持续材料的下一代解决方案，确保客户在气候不确定的时代保持领先。",
     about_cta: "了解更多关于我们",
     stat_founded: "成立年份",
@@ -539,7 +539,7 @@ const i18n = {
     cf_cta_catalog: "查看完整目录",
     cf_cta_inquiry: "申请报价",
 
-    footer_tagline: "为水资源高效利用的世界提供精密灌溉解决方案。",
+    footer_tagline: "用水实现科学农业的企业",
     footer_col_company: "公司",
     footer_col_products: "产品",
     footer_col_contact: "联系我们",
@@ -551,10 +551,10 @@ const i18n = {
     footer_link_drippers: "滴头",
     footer_link_sprinklers: "微喷头",
     footer_link_smart: "智能系统",
-    footer_address: "韩国京畿道安山市产业园区123号",
-    footer_phone: "+82-31-000-0000",
-    footer_email: "info@wooyoungtech.com",
-    footer_copyright: "© 2026 优英科技有限公司 保留所有权利。",
+    footer_address: "韩国庆尚北道高灵郡多山面罗仙路 365-27",
+    footer_phone: "+82-54-954-0885",
+    footer_email: "wy21424@naver.com",
+    footer_copyright: "© 2026 优英农业资材有限公司 保留所有权利。",
 
     alt_hero_video: "农田灌溉系统",
     alt_product_drip_tape: "滴灌带产品",
