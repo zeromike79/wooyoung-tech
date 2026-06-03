@@ -687,7 +687,10 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 /* ============================================================
    CONTACT SECTION
    ============================================================ */
-.contact-section { background: var(--clr-bg); }
+.contact-section {
+  background: var(--clr-bg);
+  padding-top: clamp(40px, 5vw, 60px);
+}
 
 .contact-grid {
   display: grid;

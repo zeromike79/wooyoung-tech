@@ -43,7 +43,7 @@ const i18n = {
     why_block1_desc: "Our ISO-certified facilities produce components to tolerances of ±0.05 mm, ensuring every dripper delivers exactly the right flow rate season after season.",
     why_block1_stat: "±0.05 mm tolerance",
     why_block2_title: "Water-Saving Technology",
-    why_block2_desc: "Wooyoung Tech systems reduce water consumption by up to 50% compared to conventional surface irrigation while improving crop yields.",
+    why_block2_desc: "WOOYEONG systems reduce water consumption by up to 50% compared to conventional surface irrigation while improving crop yields.",
     why_block2_stat: "Up to 50% water savings",
     why_block3_title: "Global Field Expertise",
     why_block3_desc: "From arid deserts to tropical greenhouses, our products are deployed across 40+ countries, validated in the world's most demanding growing conditions.",
@@ -60,8 +60,8 @@ const i18n = {
     solution_orchard_desc: "Robust drip and under-tree sprinkler networks designed for fruit trees, vineyards, and perennial crops on uneven terrain.",
 
     // About Section
-    about_section_title: "About Wooyoung Tech",
-    about_section_subtitle: "A trusted partner in agricultural irrigation since 1998.",
+    about_section_title: "About WOOYEONG TECH",
+    about_section_subtitle: "WOOYEONG Agricultural Materials — scientific farming with water since 1998.",
     about_desc1: "WOOYEONG Agricultural Materials was established with a single mission: to help farmers grow more with less. We design and manufacture a complete range of irrigation products — from individual drip emitters to full turnkey systems — that increase crop yields, conserve precious water resources, and reduce operational costs.",
     about_desc2: "Our R&D team continuously develops next-generation solutions integrating sensor technology, AI-driven scheduling, and sustainable materials, ensuring our customers stay ahead in an era of climate uncertainty.",
     about_cta: "Learn More About Us",
@@ -80,17 +80,17 @@ const i18n = {
 
     // News Section
     news_section_title: "Latest News",
-    news_section_subtitle: "Stay updated with the latest from Wooyoung Tech.",
+    news_section_subtitle: "Stay updated with the latest from WOOYEONG TECH.",
     news1_cat: "Product Launch",
-    news1_title: "Wooyoung Tech Unveils Next-Gen Smart Dripper Series",
+    news1_title: "WOOYEONG TECH Unveils Next-Gen Smart Dripper Series",
     news1_date: "May 15, 2026",
     news1_excerpt: "The new WD-700 series features built-in pressure compensation and self-flushing mechanisms for clog-free performance.",
     news2_cat: "Exhibition",
-    news2_title: "Meet Us at Agri-Tech Middle East 2026",
+    news2_title: "Meet WOOYEONG TECH at Agri-Tech Middle East 2026",
     news2_date: "April 28, 2026",
-    news2_excerpt: "Wooyoung Tech will showcase its full irrigation product line at the Dubai World Trade Centre, Hall 3, Booth B14.",
+    news2_excerpt: "WOOYEONG TECH will showcase its full irrigation product line at the Dubai World Trade Centre, Hall 3, Booth B14.",
     news3_cat: "Company News",
-    news3_title: "Wooyoung Tech Achieves ISO 9001:2015 Recertification",
+    news3_title: "WOOYEONG TECH Achieves ISO 9001:2015 Recertification",
     news3_date: "March 10, 2026",
     news3_excerpt: "Our manufacturing facilities have successfully passed the annual ISO 9001:2015 quality management audit for the fifth consecutive year.",
     news_view_all: "View All News →",
@@ -141,7 +141,7 @@ const i18n = {
     footer_address: "365-27, Naseon-ro, Dasan-myeon, Goryeong-gun, Gyeongsangbuk-do, Korea",
     footer_phone: "+82-54-954-0885",
     footer_email: "wy21424@naver.com",
-    footer_copyright: "© 2026 WOOYEONG Agricultural Materials All rights reserved.",
+    footer_copyright: "© 2026 WOOYEONG Agricultural Materials. All rights reserved.",
 
     // Alt texts
     alt_hero_video: "Irrigation system in field",
@@ -219,8 +219,8 @@ const i18n = {
     solution_orchard_name: "과수원",
     solution_orchard_desc: "경사지 과수, 포도원, 다년생 작물에 적합한 강건한 점적·수목하 스프링클러 네트워크.",
 
-    about_section_title: "우영테크 소개",
-    about_section_subtitle: "1998년부터 농업용 관개의 신뢰할 수 있는 파트너.",
+    about_section_title: "우영농자재 소개",
+    about_section_subtitle: "1998년부터 물과 함께 과학 영농을 실현하는 기업.",
     about_desc1: "우영농자재는 단 하나의 사명으로 설립되었습니다: 농업인이 더 적은 자원으로 더 많이 수확할 수 있도록 돕는 것. 개별 드리퍼부터 완전 턴키 시스템까지 다양한 관개 제품을 설계·제조하여 작물 수확량을 높이고 수자원을 보전하며 운영 비용을 절감합니다.",
     about_desc2: "R&D팀은 센서 기술, AI 기반 일정 관리, 친환경 소재를 통합한 차세대 솔루션을 지속적으로 개발하여 기후 불확실성 시대에도 고객이 앞서 나갈 수 있도록 지원합니다.",
     about_cta: "회사 소개 더 보기",
@@ -238,7 +238,7 @@ const i18n = {
     stat_founded_suffix: "",
 
     news_section_title: "최신 소식",
-    news_section_subtitle: "우영테크의 최신 뉴스를 확인하세요.",
+    news_section_subtitle: "우영농자재의 최신 소식을 확인하세요.",
     news1_cat: "신제품 출시",
     news1_title: "우영테크, 차세대 스마트 드리퍼 시리즈 공개",
     news1_date: "2026년 5월 15일",
@@ -363,8 +363,8 @@ const i18n = {
     solution_orchard_name: "果樹園",
     solution_orchard_desc: "不整地の果樹・ブドウ園・多年生作物向け強靭な点滴・樹下スプリンクラー網。",
 
-    about_section_title: "ウーヨンテックについて",
-    about_section_subtitle: "1998年から農業灌漑の信頼できるパートナー。",
+    about_section_title: "우영농자재について",
+    about_section_subtitle: "1998年から水と共に科学農業を実現する企業。",
     about_desc1: "우영농자재(주)はひとつの使命のもとに設立されました：農家がより少ない資源でより多く収穫できるよう支援すること。個別のドリッパーから完全ターンキーシステムまで、幅広い灌漑製品を設計・製造し、収量向上、水資源保全、運用コスト削減を実現します。",
     about_desc2: "R&Dチームはセンサー技術、AIスケジューリング、持続可能な素材を統合した次世代ソリューションを継続的に開発し、気候の不確実性の時代においてもお客様が先導できるよう支援します。",
     about_cta: "会社概要をもっと見る",
@@ -507,8 +507,8 @@ const i18n = {
     solution_orchard_name: "果园",
     solution_orchard_desc: "为不平整地形的果树、葡萄园和多年生作物设计的强健滴灌及树下喷灌网络。",
 
-    about_section_title: "关于优英科技",
-    about_section_subtitle: "自1998年以来，农业灌溉领域值得信赖的合作伙伴。",
+    about_section_title: "关于优英农业资材",
+    about_section_subtitle: "自1998年以来，用水实现科学农业的企业。",
     about_desc1: "优英农业资材有限公司以一个使命创立：帮助农民用更少的资源收获更多。我们设计和制造从单个滴头到完整交钥匙系统的全系列灌溉产品，提高作物产量、节约宝贵水资源并降低运营成本。",
     about_desc2: "我们的研发团队持续开发融合传感器技术、AI调度和可持续材料的下一代解决方案，确保客户在气候不确定的时代保持领先。",
     about_cta: "了解更多关于我们",
