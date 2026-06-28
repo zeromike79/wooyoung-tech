@@ -61,12 +61,21 @@ function initHeroSlider() {
     dotsEl.appendChild(dot);
   });
 
+  function videoOf(slide) { return slide.querySelector('video'); }
+
   function goTo(idx) {
+    const prevVid = videoOf(slides[cur]);
+    if (prevVid) prevVid.pause();
+
     slides[cur].classList.remove('hero-slide--active');
     dotsEl.children[cur].classList.remove('hero-dot--active');
     cur = (idx + slides.length) % slides.length;
     slides[cur].classList.add('hero-slide--active');
     dotsEl.children[cur].classList.add('hero-dot--active');
+
+    const nextVid = videoOf(slides[cur]);
+    if (nextVid) { nextVid.currentTime = 0; nextVid.play(); }
+
     resetTimer();
   }
 
