@@ -7,6 +7,16 @@
   <title>Contact | WOOYEONG TECH</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <!-- OG / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wooyeongtech.com/contact.html" />
+  <meta property="og:title" content="Contact | WOOYEONG TECH" />
+  <meta property="og:description" content="Get in touch with WOOYEONG TECH for product inquiries, export partnerships, and technical support." />
+  <meta property="og:image" content="https://wooyeongtech.com/images/ref4.JPEG" />
+  <meta name="twitter:card" content="summary_large_image" />
 </head>
 <body>
 
@@ -43,7 +53,7 @@
   </header>
   <div id="nav-overlay" aria-hidden="true"></div>
 
-  <section class="page-hero" style="background-image:url('images/ref1.JPEG');" aria-label="Page header">
+  <section class="page-hero" style="background-image:url('images/ref4.JPEG');" aria-label="Page header">
     <div class="page-hero-overlay"></div>
     <div class="container page-hero-content animate-on-scroll">
       <p class="page-breadcrumb">
@@ -261,7 +271,7 @@
   <script src="js/lang.js"></script>
   <script src="js/main.js"></script>
   <script>
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
       e.preventDefault();
       const name    = document.getElementById('cf-name').value.trim();
       const email   = document.getElementById('cf-email').value.trim();
@@ -269,15 +279,31 @@
       const type    = document.getElementById('cf-type').value;
       const message = document.getElementById('cf-message').value.trim();
       if (!name || !email || !message) return;
-      const subject = encodeURIComponent('[WOOYEONG] ' + type + ' — ' + name);
-      const body    = encodeURIComponent(
-        'Name: ' + name + '\n' +
-        'Email: ' + email + '\n' +
-        (company ? 'Company: ' + company + '\n' : '') +
-        'Type: ' + type + '\n\n' +
-        message
-      );
-      window.location.href = 'mailto:wy21424@naver.com?subject=' + subject + '&body=' + body;
+
+      const btn = this.querySelector('button[type=submit]');
+      const orig = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
+
+      try {
+        const res = await fetch('https://formsubmit.co/ajax/jhyoo@anthrometa.com', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({
+            _subject: '[WOOYEONG] ' + type + ' — ' + name,
+            name, email, company, type, message
+          })
+        });
+        if (res.ok) {
+          this.innerHTML = '<div style="text-align:center;padding:40px 0;"><i class="fa-solid fa-circle-check" style="font-size:2.5rem;color:var(--clr-primary);display:block;margin-bottom:16px;"></i><p style="font-weight:600;font-size:1.1rem;">메시지를 보냈습니다. 1~2 영업일 내 답변 드리겠습니다.</p></div>';
+        } else {
+          throw new Error();
+        }
+      } catch {
+        btn.disabled = false;
+        btn.innerHTML = orig;
+        alert('전송 중 오류가 발생했습니다. wy21424@naver.com 으로 직접 문의해 주세요.');
+      }
     });
   </script>
 </body>

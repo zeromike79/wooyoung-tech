@@ -441,7 +441,6 @@ const productsData = [
            ja:'スターターキット · 水管D16×20m + 噴水ホース3.3cm×100m + バルブ&フィッティング',
            zh:'入门套件 · 水管D16×20m + 喷水软管3.3cm×100m + 阀门和管件' } },
 ];
-];
 
 
 // ── Cool-Fog featured product data (used by homepage highlight section) ──────
