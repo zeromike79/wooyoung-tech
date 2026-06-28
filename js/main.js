@@ -1,13 +1,13 @@
 // main.js — Interactions & Animations
 
 const PAGE = (() => {
-  const p = location.pathname.split('/').pop() || 'index.html';
-  if (p === 'products.html') return 'products';
-  if (p === 'solutions.html') return 'solutions';
-  if (p === 'about.html') return 'about';
-  if (p === 'contact.html') return 'contact';
-  if (p === 'faq.html') return 'faq';
-  if (p === 'news.html') return 'news';
+  const p = (location.pathname.split('/').pop() || '').replace(/\.html$/, '');
+  if (p === 'products') return 'products';
+  if (p === 'solutions') return 'solutions';
+  if (p === 'about') return 'about';
+  if (p === 'contact') return 'contact';
+  if (p === 'faq') return 'faq';
+  if (p === 'news') return 'news';
   return 'home';
 })();
 
@@ -50,7 +50,7 @@ function initHeroSlider() {
 
   let cur = 0;
   let timer;
-  const INTERVAL = 6000;
+  const INTERVAL = 8500;
 
   // Build dots
   slides.forEach((_, i) => {
