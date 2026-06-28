@@ -11,6 +11,16 @@
 
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <!-- OG / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wooyeongtech.com/" />
+  <meta property="og:title" content="WOOYEONG TECH — Precision Irrigation Solutions" />
+  <meta property="og:description" content="Advanced drip and sprinkler irrigation systems for agriculture. Trusted by farmers in 40+ countries." />
+  <meta property="og:image" content="https://wooyeongtech.com/images/field_factory_wide.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
 </head>
 <body>
 
@@ -65,24 +75,24 @@
        HERO
   ═══════════════════════════════════════════════════════ -->
   <section id="hero" aria-label="Hero">
-    <video class="hero-video" autoplay muted loop playsinline preload="none"
-           data-i18n-alt="alt_hero_video">
-      <source src="videos/factory_auto.mp4" type="video/mp4" />
-    </video>
-    <div class="hero-overlay" aria-hidden="true"></div>
 
-    <!-- Fallback bg image when video not available -->
-    <style>
-      .hero-video:not([src*=".mp4"]),
-      .hero-video[src=""] {
-        display: none;
-      }
-      #hero {
-        background-image: url('images/field_factory_wide.jpg');
-        background-size: cover;
-        background-position: center;
-      }
-    </style>
+    <!-- Slides -->
+    <div class="hero-slider" id="hero-slider">
+      <!-- Slide 1: Video -->
+      <div class="hero-slide hero-slide--active">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto">
+          <source src="videos/factory_auto.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <!-- Slide 2 -->
+      <div class="hero-slide" style="background-image:url('images/field_pe_pipe.jpg');"></div>
+      <!-- Slide 3 -->
+      <div class="hero-slide" style="background-image:url('images/field_factory_wide.jpg');"></div>
+      <!-- Slide 4 -->
+      <div class="hero-slide" style="background-image:url('images/field_warehouse.jpg');"></div>
+    </div>
+
+    <div class="hero-overlay" aria-hidden="true"></div>
 
     <div class="container">
       <div class="hero-content">
@@ -98,6 +108,17 @@
         </div>
       </div>
     </div>
+
+    <!-- Prev / Next arrows -->
+    <button class="hero-arrow hero-arrow--prev" id="hero-prev" aria-label="Previous slide">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="hero-arrow hero-arrow--next" id="hero-next" aria-label="Next slide">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <!-- Dot indicators -->
+    <div class="hero-dots" id="hero-dots" aria-label="Slide indicators"></div>
 
     <div class="hero-scroll" aria-hidden="true">
       <span data-i18n="hero_scroll">Scroll</span>

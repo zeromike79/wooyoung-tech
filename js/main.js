@@ -7,6 +7,7 @@ const PAGE = (() => {
   if (p === 'about.html') return 'about';
   if (p === 'contact.html') return 'contact';
   if (p === 'faq.html') return 'faq';
+  if (p === 'news.html') return 'news';
   return 'home';
 })();
 
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
 
   if (PAGE === 'home') {
+    initHeroSlider();
     initCoolFog();
     initSolutionCards();
   }
@@ -37,6 +39,47 @@ document.addEventListener('DOMContentLoaded', () => {
     initFaq();
   }
 });
+
+// ── Hero Slider ───────────────────────────────────────────────────────────────
+function initHeroSlider() {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dotsEl = document.getElementById('hero-dots');
+  const prevBtn = document.getElementById('hero-prev');
+  const nextBtn = document.getElementById('hero-next');
+  if (!slides.length || !dotsEl) return;
+
+  let cur = 0;
+  let timer;
+  const INTERVAL = 6000;
+
+  // Build dots
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'hero-dot' + (i === 0 ? ' hero-dot--active' : '');
+    dot.setAttribute('aria-label', `Slide ${i + 1}`);
+    dot.addEventListener('click', () => goTo(i));
+    dotsEl.appendChild(dot);
+  });
+
+  function goTo(idx) {
+    slides[cur].classList.remove('hero-slide--active');
+    dotsEl.children[cur].classList.remove('hero-dot--active');
+    cur = (idx + slides.length) % slides.length;
+    slides[cur].classList.add('hero-slide--active');
+    dotsEl.children[cur].classList.add('hero-dot--active');
+    resetTimer();
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => goTo(cur + 1), INTERVAL);
+  }
+
+  prevBtn?.addEventListener('click', () => goTo(cur - 1));
+  nextBtn?.addEventListener('click', () => goTo(cur + 1));
+
+  resetTimer();
+}
 
 // ── FAQ Accordion ─────────────────────────────────────────────────────────────
 function initFaq() {
