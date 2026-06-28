@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="font-en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Latest news and updates from WOOYEONG TECH — product launches, exhibitions, and company milestones." />
+  <title>News | WOOYEONG TECH</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header id="main-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Wooyoung Tech Home">
+        <img src="images/woo_transparent.png" alt="Wooyoung Tech" class="logo-img" width="28" height="28" />
+        <div class="logo-text">
+          <span class="logo-main">WOOYEONG TECH</span>
+          <span class="logo-sub">Precision Irrigation</span>
+        </div>
+      </a>
+      <nav id="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="about.html" data-i18n="nav_about">About Us</a>
+        <a href="products.html" data-i18n="nav_products">Products</a>
+        <a href="solutions.html" data-i18n="nav_solutions">Solutions</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        <a href="faq.html" data-i18n="nav_faq">Q&amp;A</a>
+        <div id="admin-lang-bar" role="group" aria-label="Language selector">
+          <label for="lang-selector" style="color:#666;font-size:.8rem;font-weight:600;" data-i18n="lang_label">Language</label>
+          <select id="lang-selector" aria-label="Select language">
+            <option value="en">English</option>
+            <option value="ko">한국어</option>
+            <option value="ja">日本語</option>
+            <option value="zh">中文</option>
+          </select>
+        </div>
+      </nav>
+      <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div id="nav-overlay" aria-hidden="true"></div>
+
+  <section class="page-hero" style="background-image:url('images/field_warehouse2.jpg');" aria-label="Page header">
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content animate-on-scroll">
+      <p class="page-breadcrumb">
+        <a href="index.html" data-i18n="breadcrumb_home">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span data-i18n="page_news_title">News</span>
+      </p>
+      <h1 data-i18n="page_news_title">News</h1>
+      <p data-i18n="page_news_subtitle">The latest updates from WOOYEONG TECH.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       NEWS GRID
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section" aria-labelledby="news-heading">
+    <div class="container">
+
+      <div class="news-grid">
+
+        <!-- News 1 -->
+        <article class="news-card animate-on-scroll">
+          <div class="news-card-img">
+            <img src="images/field_wooyeong_boxes.jpg"
+                 data-i18n-alt="alt_news1"
+                 alt="Smart dripper series news"
+                 loading="lazy" width="800" height="450" />
+          </div>
+          <div class="news-card-body">
+            <div class="news-meta">
+              <span class="news-cat" data-i18n="news1_cat">Product Launch</span>
+              <time class="news-date" data-i18n="news1_date">May 15, 2026</time>
+            </div>
+            <h3 data-i18n="news1_title">WOOYEONG TECH Unveils Next-Gen Smart Dripper Series</h3>
+            <p data-i18n="news1_excerpt">The new WD-700 series features built-in pressure compensation and self-flushing mechanisms for clog-free performance.</p>
+          </div>
+        </article>
+
+        <!-- News 2 -->
+        <article class="news-card animate-on-scroll">
+          <div class="news-card-img">
+            <img src="images/field_warehouse.jpg"
+                 data-i18n-alt="alt_news2"
+                 alt="Agri-Tech exhibition news"
+                 loading="lazy" width="800" height="450" />
+          </div>
+          <div class="news-card-body">
+            <div class="news-meta">
+              <span class="news-cat" data-i18n="news2_cat">Exhibition</span>
+              <time class="news-date" data-i18n="news2_date">April 28, 2026</time>
+            </div>
+            <h3 data-i18n="news2_title">Meet WOOYEONG TECH at Agri-Tech Middle East 2026</h3>
+            <p data-i18n="news2_excerpt">WOOYEONG TECH will showcase its full irrigation product line at the Dubai World Trade Centre, Hall 3, Booth B14.</p>
+          </div>
+        </article>
+
+        <!-- News 3 -->
+        <article class="news-card animate-on-scroll">
+          <div class="news-card-img">
+            <img src="images/field_factory2.jpg"
+                 data-i18n-alt="alt_news3"
+                 alt="ISO certification news"
+                 loading="lazy" width="800" height="450" />
+          </div>
+          <div class="news-card-body">
+            <div class="news-meta">
+              <span class="news-cat" data-i18n="news3_cat">Company News</span>
+              <time class="news-date" data-i18n="news3_date">March 10, 2026</time>
+            </div>
+            <h3 data-i18n="news3_title">WOOYEONG TECH Achieves ISO 9001:2015 Recertification</h3>
+            <p data-i18n="news3_excerpt">Our manufacturing facilities have successfully passed the annual ISO 9001:2015 quality management audit for the fifth consecutive year.</p>
+          </div>
+        </article>
+
+        <!-- News 4 -->
+        <article class="news-card animate-on-scroll">
+          <div class="news-card-img">
+            <img src="images/field_pe_pipe2.jpg"
+                 alt="Southeast Asia export expansion"
+                 loading="lazy" width="800" height="450" />
+          </div>
+          <div class="news-card-body">
+            <div class="news-meta">
+              <span class="news-cat" data-i18n="news4_cat">Export</span>
+              <time class="news-date" data-i18n="news4_date">February 20, 2026</time>
+            </div>
+            <h3 data-i18n="news4_title">WOOYEONG TECH Expands Export to Southeast Asia</h3>
+            <p data-i18n="news4_excerpt">New distribution agreements signed with partners in Vietnam, Thailand, and Indonesia, extending our precision irrigation solutions to over 5 million new farming households.</p>
+          </div>
+        </article>
+
+        <!-- News 5 -->
+        <article class="news-card animate-on-scroll">
+          <div class="news-card-img">
+            <img src="images/field_pe_extrusion.jpg"
+                 alt="New KP Coupler product launch"
+                 loading="lazy" width="800" height="450" />
+          </div>
+          <div class="news-card-body">
+            <div class="news-meta">
+              <span class="news-cat" data-i18n="news5_cat">Product Launch</span>
+              <time class="news-date" data-i18n="news5_date">January 14, 2026</time>
+            </div>
+            <h3 data-i18n="news5_title">New KP Coupler Line Cuts Field Installation Time by 40%</h3>
+            <p data-i18n="news5_excerpt">The redesigned KP wrench-type coupler features a one-touch lock mechanism that eliminates the need for special tools during large-scale field irrigation assembly.</p>
+          </div>
+        </article>
+
+        <!-- News 6 -->
+        <article class="news-card animate-on-scroll">
+          <div class="news-card-img">
+            <img src="images/field_auto_machine.jpg"
+                 alt="Cool-Fog R&D validation news"
+                 loading="lazy" width="800" height="450" />
+          </div>
+          <div class="news-card-body">
+            <div class="news-meta">
+              <span class="news-cat" data-i18n="news6_cat">R&amp;D</span>
+              <time class="news-date" data-i18n="news6_date">December 5, 2025</time>
+            </div>
+            <h3 data-i18n="news6_title">Cool-Fog System Validated by Kyungpook National University</h3>
+            <p data-i18n="news6_excerpt">Independent testing by the KNU Combustion Engineering Lab confirmed a 4–12°C temperature reduction and 15.8µm average droplet size, setting a new benchmark for greenhouse cooling.</p>
+          </div>
+        </article>
+
+      </div><!-- /.news-grid -->
+
+    </div>
+  </section>
+
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/woo_transparent.png" alt="Wooyoung Tech" class="logo-img logo-img--footer" width="40" height="40" />
+            <div class="logo-text">
+              <span class="logo-main">WOOYEONG TECH</span>
+              <span class="logo-sub">Precision Irrigation</span>
+            </div>
+          </a>
+          <p class="footer-tagline" data-i18n="footer_tagline">Precision irrigation solutions for a water-efficient world.</p>
+          <nav class="footer-social" aria-label="Social media links">
+            <a aria-label="LinkedIn" title="Coming soon" tabindex="0" style="cursor:not-allowed;opacity:0.5;"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a aria-label="YouTube" title="Coming soon" tabindex="0" style="cursor:not-allowed;opacity:0.5;"><i class="fa-brands fa-youtube"></i></a>
+            <a aria-label="Facebook" title="Coming soon" tabindex="0" style="cursor:not-allowed;opacity:0.5;"><i class="fa-brands fa-facebook-f"></i></a>
+            <a aria-label="Instagram" title="Coming soon" tabindex="0" style="cursor:not-allowed;opacity:0.5;"><i class="fa-brands fa-instagram"></i></a>
+          </nav>
+        </div>
+
+        <!-- Company links -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_col_company">Company</h4>
+          <ul>
+            <li><a href="about.html" data-i18n="footer_link_about">About Us</a></li>
+            <li><a href="solutions.html" data-i18n="footer_link_solutions">Solutions</a></li>
+            <li><a href="news.html" data-i18n="footer_link_news">News</a></li>
+            <li><a href="contact.html" data-i18n="footer_link_contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Product links -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_col_products">Products</h4>
+          <ul>
+            <li><a href="products.html?cat=tubes_hoses" data-i18n="footer_link_drip">Tubes &amp; Hoses</a></li>
+            <li><a href="products.html?cat=couplers" data-i18n="footer_link_drippers">Couplers</a></li>
+            <li><a href="products.html?cat=filters" data-i18n="footer_link_sprinklers">Filters</a></li>
+            <li><a href="products.html?cat=valves" data-i18n="footer_link_smart">Valves</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact info -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_col_contact">Contact Us</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span data-i18n="footer_address">365-27, Naseon-ro, Dasan-myeon, Goryeong-gun, Gyeongsangbuk-do, Korea</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+82549540885" data-i18n="footer_phone">+82-54-954-0885</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-fax" aria-hidden="true"></i>
+              <span>FAX. 054-954-0883</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:wy21424@naver.com" data-i18n="footer_email">wy21424@naver.com</a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!-- /.footer-top -->
+
+      <div class="footer-bottom">
+        <p data-i18n="footer_copyright">© 2026 Wooyoung Tech Co., Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
