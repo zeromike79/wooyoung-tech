@@ -5,6 +5,7 @@ const i18n = {
     nav_solutions: "Solutions",
     nav_about: "About Us",
     nav_contact: "Contact",
+    nav_news: "News",
     lang_label: "Language",
 
     // Hero
@@ -504,6 +505,7 @@ const i18n = {
     nav_solutions: "ソリューション",
     nav_about: "会社概要",
     nav_contact: "お問い合わせ",
+    nav_news: "ニュース",
     lang_label: "言語",
 
     hero_title: "精密灌漑ソリューション",
@@ -732,6 +734,7 @@ const i18n = {
     nav_solutions: "解决方案",
     nav_about: "关于我们",
     nav_contact: "联系我们",
+    nav_news: "新闻",
     lang_label: "语言",
 
     hero_title: "精密灌溉解决方案",
