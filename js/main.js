@@ -82,19 +82,41 @@ function getCatalogUrl(category, lang) {
 function initProductModal() {
   const overlay  = document.getElementById('product-modal');
   const closeBtn = document.getElementById('modal-close');
+  const prevBtn  = document.getElementById('modal-prev');
+  const nextBtn  = document.getElementById('modal-next');
+  const counter  = document.getElementById('modal-nav-counter');
   if (!overlay) return;
+
+  let _list = [];
+  let _idx  = 0;
 
   const close = () => {
     overlay.hidden = true;
     document.body.style.overflow = '';
   };
 
+  const navigate = (dir) => {
+    const newIdx = _idx + dir;
+    if (newIdx < 0 || newIdx >= _list.length) return;
+    openModal(_list[newIdx], _list, newIdx);
+  };
+
   closeBtn.addEventListener('click', close);
   overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') close();
+    if (!overlay.hidden) {
+      if (e.key === 'ArrowLeft')  navigate(-1);
+      if (e.key === 'ArrowRight') navigate(1);
+    }
+  });
+  if (prevBtn) prevBtn.addEventListener('click', () => navigate(-1));
+  if (nextBtn) nextBtn.addEventListener('click', () => navigate(1));
 
-  // Expose opener so renderGrid can call it
-  window.__openProductModal = (product) => {
+  function openModal(product, list, idx) {
+    _list = list || [product];
+    _idx  = (idx != null) ? idx : 0;
+
     const lang = window.__currentLang || 'en';
     const data = i18n[lang] || i18n.en;
 
@@ -108,21 +130,25 @@ function initProductModal() {
     document.getElementById('modal-product-name').textContent = product.name[lang] || product.name.en;
     document.getElementById('modal-desc').textContent = product.desc[lang] || product.desc.en;
 
-    // Category + language aware catalog link
     const catalogBtn = document.getElementById('modal-catalog-btn');
     catalogBtn.href = getCatalogUrl(product.category, lang);
     catalogBtn.querySelector('[data-i18n]').textContent = data.modal_download_catalog || 'Download Catalog';
 
-    // Update other i18n text in modal
     overlay.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       if (data[key]) el.textContent = data[key];
     });
 
+    if (prevBtn) prevBtn.disabled = _idx === 0;
+    if (nextBtn) nextBtn.disabled = _idx === _list.length - 1;
+    if (counter) counter.textContent = _list.length > 1 ? `${_idx + 1} / ${_list.length}` : '';
+
     overlay.hidden = false;
     document.body.style.overflow = 'hidden';
     document.getElementById('modal-close').focus();
-  };
+  }
+
+  window.__openProductModal = openModal;
 }
 
 // ── Header scroll effect ──────────────────────────────────────────────────────
@@ -383,12 +409,14 @@ function initProducts() {
       </article>`;
     }).join('');
 
-    // Bind click → modal
+    // Bind click → modal (pass full filtered list for prev/next navigation)
     grid.querySelectorAll('.product-card[data-product-id]').forEach(card => {
       const handler = () => {
         const pid = card.dataset.productId;
-        const product = productsData.find(p => p.id === pid);
-        if (product && window.__openProductModal) window.__openProductModal(product);
+        const idx = items.findIndex(p => p.id === pid);
+        if (idx !== -1 && window.__openProductModal) {
+          window.__openProductModal(items[idx], items, idx);
+        }
       };
       card.addEventListener('click', handler);
       card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') handler(); });

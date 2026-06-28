@@ -4,25 +4,25 @@ const PRODUCTS_PER_PAGE = 12;
 
 const productCategories = [
   { id: 'all',               icon: 'fa-border-all',        label: { en: 'All Products',           ko: '전체',              ja: 'すべて',             zh: '全部'      } },
-  { id: 'drip_tape_hose',    icon: 'fa-tape',              label: { en: 'Drip Tape & Hose',       ko: '점적테이프·점적호스', ja: '点滴テープ',         zh: '滴灌带·管' } },
-  { id: 'mini_sprinklers',   icon: 'fa-shower',            label: { en: 'Mini Sprinklers',        ko: '미니 스프링클러',    ja: 'ミニスプリンクラー', zh: '微喷头'    } },
-  { id: 'sprinkler_acc',     icon: 'fa-screwdriver-wrench',label: { en: 'Sprinkler Accessories',  ko: '미니클러 부속자재',  ja: 'スプリンクラー部品', zh: '微喷配件'  } },
+  { id: 'tubes_hoses',       icon: 'fa-circle-nodes',      label: { en: 'Tubes & Water Hoses',    ko: '튜브 및 물호스',     ja: 'チューブ·ホース',    zh: '管材·水管' } },
+  { id: 'couplers',          icon: 'fa-link',              label: { en: 'Couplers',               ko: '카플러',            ja: 'カプラー',           zh: '快速接头'  } },
   { id: 'filters',           icon: 'fa-filter',            label: { en: 'Filters',                ko: '여과기',            ja: 'フィルター',         zh: '过滤器'    } },
   { id: 'valves',            icon: 'fa-faucet',            label: { en: 'Valves',                 ko: '밸브류',            ja: 'バルブ類',           zh: '阀门'      } },
   { id: 'drip_valves',       icon: 'fa-droplet',           label: { en: 'Drip Valves & Fittings', ko: '점적 밸브 & 피팅',  ja: '点滴バルブ',         zh: '滴灌阀'    } },
   { id: 'hose_valves',       icon: 'fa-water',             label: { en: 'Water Hose Valves',      ko: '물호스 밸브',        ja: 'ホースバルブ',       zh: '水管阀'    } },
   { id: 'spray_valves',      icon: 'fa-spray-can',         label: { en: 'Spray Hose Valves',      ko: '분수 밸브',          ja: '噴水バルブ',         zh: '喷水阀'    } },
-  { id: 'drip_acc',          icon: 'fa-puzzle-piece',      label: { en: 'Drip Accessories',       ko: '점적 액세서리',      ja: '点滴アクセサリー',   zh: '滴灌配件'  } },
   { id: 'wrench_fittings',   icon: 'fa-wrench',            label: { en: 'Wrench Fittings',        ko: '조임식 연결구',      ja: '締付継手',           zh: '扳手管件'  } },
+  { id: 'drip_acc',          icon: 'fa-puzzle-piece',      label: { en: 'Drip Accessories',       ko: '점적 액세서리',      ja: '点滴アクセサリー',   zh: '滴灌配件'  } },
   { id: 'threaded_fittings', icon: 'fa-gear',              label: { en: 'Threaded Fittings',      ko: '배관자재',          ja: 'ねじ式継手',         zh: '螺纹管件'  } },
   { id: 'saddles',           icon: 'fa-circle-dot',        label: { en: 'Saddles',                ko: '새들',              ja: 'サドル',             zh: '马鞍接头'  } },
-  { id: 'tubes_hoses',       icon: 'fa-circle-nodes',      label: { en: 'Tubes & Water Hoses',    ko: '튜브 및 물호스',     ja: 'チューブ·ホース',    zh: '管材·水管' } },
+  { id: 'mini_sprinklers',   icon: 'fa-shower',            label: { en: 'Mini Sprinklers',        ko: '미니 스프링클러',    ja: 'ミニスプリンクラー', zh: '微喷头'    } },
+  { id: 'sprinkler_acc',     icon: 'fa-screwdriver-wrench',label: { en: 'Sprinkler Accessories',  ko: '미니클러 부속자재',  ja: 'スプリンクラー部品', zh: '微喷配件'  } },
   { id: 'nutriculture',      icon: 'fa-leaf',              label: { en: 'Nutriculture Materials', ko: '양액 자재',          ja: '養液資材',           zh: '营养液材料'} },
   { id: 'clips_pincers',     icon: 'fa-scissors',          label: { en: 'Clips & Pincers',        ko: '집게 및 클립',       ja: 'クリップ',           zh: '夹子·钳'   } },
   { id: 'fruit_materials',   icon: 'fa-apple-whole',       label: { en: 'Fruit Tree Materials',   ko: '과수자재 및 기타',   ja: '果樹資材',           zh: '果树材料'  } },
-  { id: 'couplers',          icon: 'fa-link',              label: { en: 'Couplers',               ko: '카플러',            ja: 'カプラー',           zh: '快速接头'  } },
+  { id: 'drip_tape_hose',    icon: 'fa-tape',              label: { en: 'Drip Tape & Hose',       ko: '점적테이프·점적호스', ja: '点滴テープ',         zh: '滴灌带·管' } },
   { id: 'cooling',           icon: 'fa-snowflake',         label: { en: 'Cool-Fog System',        ko: '쿨-포그',           ja: 'クールフォグ',       zh: '酷雾系统'  } },
-  { id: 'veg_lab',           icon: 'fa-seedling',          label: { en: 'Vegetable Garden Lab',   ko: '텃밭 실험실',        ja: '家庭菜園セット',     zh: '菜园实验室'} },
+  { id: 'veg_lab',           icon: 'fa-seedling',          label: { en: 'Vegetable Garden Lab',   ko: '텃밭 실험실',        ja: '家庭菜園セット',     zh: '菜园실험실'} },
 ];
 
 // ─────────────────────────────────────────────────────────────────
