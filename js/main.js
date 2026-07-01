@@ -114,19 +114,25 @@ const CATALOG_MAP = {
   general: {
     en: 'downloads/catalog_en.pdf',
     ko: 'downloads/catalog_en.pdf',
-    ja: 'downloads/catalog_ja.pdf',
-    zh: 'downloads/catalog_zh.pdf',
+    ja: 'downloads/catalog_en.pdf',
+    zh: 'downloads/catalog_en.pdf',
   },
   cooling: {
     en: 'downloads/coolfog_en.pdf',
     ko: 'downloads/coolfog_en.pdf',
-    ja: 'downloads/coolfog_ja.pdf',
-    zh: 'downloads/coolfog_zh.pdf',
+    ja: 'downloads/coolfog_en.pdf',
+    zh: 'downloads/coolfog_en.pdf',
+  },
+  veg_lab: {
+    en: 'downloads/veglab_en.pdf',
+    ko: 'downloads/veglab_en.pdf',
+    ja: 'downloads/veglab_en.pdf',
+    zh: 'downloads/veglab_en.pdf',
   },
 };
 
 function getCatalogUrl(category, lang) {
-  const map = (category === 'cooling') ? CATALOG_MAP.cooling : CATALOG_MAP.general;
+  const map = CATALOG_MAP[category] || CATALOG_MAP.general;
   return map[lang] || map.en;
 }
 
