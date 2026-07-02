@@ -286,13 +286,10 @@
       btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
 
       try {
-        const res = await fetch('https://formsubmit.co/ajax/jhyoo@anthrometa.com', {
+        const res = await fetch('/api/contact', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify({
-            _subject: '[WOOYEONG] ' + type + ' — ' + name,
-            name, email, company, type, message
-          })
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, company, type, message })
         });
         if (res.ok) {
           this.innerHTML = '<div style="text-align:center;padding:40px 0;"><i class="fa-solid fa-circle-check" style="font-size:2.5rem;color:var(--clr-primary);display:block;margin-bottom:16px;"></i><p style="font-weight:600;font-size:1.1rem;">메시지를 보냈습니다. 1~2 영업일 내 답변 드리겠습니다.</p></div>';
