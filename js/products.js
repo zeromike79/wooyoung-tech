@@ -47,12 +47,6 @@ const productsData = [
 
 
   // ── 16+19. 카플러 ────────────────────────────────────────────
-  { id:'WY-16101', category:'couplers', img:'16101.jpg', imgSeed:'coupler-tee-female',
-    name:{ en:'Lay Flat Coupler Tee (Female) WY-16101', ko:'카플러T(암나사) WY-16101', ja:'送水カプラーT(めねじ) WY-16101', zh:'扁管接头T(内螺纹) WY-16101' },
-    desc:{ en:'Lay-flat hose coupler tee · female thread · for supply hose branching.',
-           ko:'송수 호스 카플러 티 · 암나사 · 공급 호스 분기용',
-           ja:'送水ホースカプラーティー · めねじ · 供給ホース分岐用',
-           zh:'扁管接头三通 · 内螺纹 · 用于供水软管分支' } },
   { id:'WY-19101', category:'couplers', img:'19101.jpg', imgSeed:'kp-coupler-e',
     name:{ en:'KP Coupler (E-type) WY-19101', ko:'KP(조임식) 카플러(E형) WY-19101', ja:'KP(締付)カプラー(E型) WY-19101', zh:'KP扳手接头(E型) WY-19101' },
     desc:{ en:'Wrench-type KP coupler E · 40/50 mm · quick-connect field irrigation coupling.',
