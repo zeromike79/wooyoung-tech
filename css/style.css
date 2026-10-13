@@ -1497,10 +1497,15 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   transition: box-shadow var(--transition), transform var(--transition);
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 .news-card:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-4px);
+}
+.news-card:focus-visible {
+  outline: 3px solid var(--clr-primary, #2e7d32);
+  outline-offset: 2px;
 }
 
 .news-card-img {

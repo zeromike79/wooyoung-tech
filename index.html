@@ -391,7 +391,7 @@
       <div class="news-grid">
 
         <!-- News 1 -->
-        <article class="news-card animate-on-scroll">
+        <article class="news-card animate-on-scroll" data-news-id="1" tabindex="0" role="button">
           <div class="news-card-img">
             <img src="images/kiemsta_2026.jpg"
                  data-i18n-alt="alt_news1"
@@ -409,7 +409,7 @@
         </article>
 
         <!-- News 2 -->
-        <article class="news-card animate-on-scroll">
+        <article class="news-card animate-on-scroll" data-news-id="2" tabindex="0" role="button">
           <div class="news-card-img">
             <img src="images/field_wooyeong_boxes.jpg"
                  data-i18n-alt="alt_news2"
@@ -427,7 +427,7 @@
         </article>
 
         <!-- News 3 -->
-        <article class="news-card animate-on-scroll">
+        <article class="news-card animate-on-scroll" data-news-id="3" tabindex="0" role="button">
           <div class="news-card-img">
             <img src="images/field_warehouse.jpg"
                  data-i18n-alt="alt_news3"
@@ -564,6 +564,40 @@
   </div>
 
   <!-- ── Scripts ──────────────────────────────────────── -->
+  <!-- ══════════════════════════════════════════════════════
+       NEWS MODAL
+  ═══════════════════════════════════════════════════════ -->
+  <div id="news-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="news-modal-title" hidden>
+    <div class="modal-box">
+      <button class="modal-close" id="news-modal-close" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-inner">
+        <div class="modal-img-wrap">
+          <img id="news-modal-img" src="" alt="" />
+        </div>
+        <div class="modal-content">
+          <div class="news-meta">
+            <span class="news-cat" id="news-modal-cat"></span>
+            <time class="news-date" id="news-modal-date"></time>
+          </div>
+          <h2 class="modal-product-name" id="news-modal-title"></h2>
+          <p class="modal-desc" id="news-modal-excerpt"></p>
+          <p class="modal-desc" id="news-modal-body"></p>
+        </div>
+      </div>
+      <div class="modal-nav-bar">
+        <button id="news-modal-prev" class="modal-nav-btn" aria-label="Previous news" disabled>
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <span id="news-modal-nav-counter" class="modal-nav-counter"></span>
+        <button id="news-modal-next" class="modal-nav-btn" aria-label="Next news" disabled>
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <script src="js/i18n.js"></script>
   <script src="js/lang.js"></script>
   <script src="js/main.js"></script>
